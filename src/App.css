@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  background-color: #ebebd3;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+	text-decoration: none;
+	font-size: 23px;
+	color: #083d77;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#projects-main {
+	background-color: #ebebd3;
+	z-index: 1;
+    border: 2px solid #083d77;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto;
+   	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+    overflow: hidden;
 }
+
+#projects-main:hover {
+	background-color: #f78764;
+	width: 60%;
+	height: 60%;
+	z-index: 2;
+	transform: scale(1);
+}
+
+#projects-main:hover ~ #about {
+	height: 40%;
+}
+
+
+#contacts-main {
+	background-color: #ebebd3;
+	z-index: 1;
+	border: 2px solid #083d77;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: 60%;
+	text-decoration: none;
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: auto;
+	left: auto;
+	right: 0;
+	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+	overflow: hidden;
+}
+
+#contacts-main:hover {
+	background-color: #da4167;
+	width: 60%;
+	height: 60%;
+	z-index: 2;
+	transform: scale(1); 
+}
+
+#contacts-main:hover ~ #projects-main {
+	width: 40%;
+}
+
+#logo {
+	background-color: #da4167;
+	color: #f4d35e;
+    border: 2px solid #083d77;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    padding-bottom: 9px;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transition: width 1s, height 1s , transform 1s, z-index 1s;
+    overflow: hidden;
+}
+
+#logo:hover {
+	width: 30%;
+	height: 30%;
+	z-index: 2;
+	transform: scale(1);
+}
+
+#about {
+	background-color: #ebebd3;
+    border: 2px solid #083d77;
+   	z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    width: 40%;
+    height: 60%;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+    overflow: hidden;
+}
+
+#about:hover {
+	background-color: #f4d35e;
+	width: 60%;
+	height: 60%;
+	transform: scale(1);
+	z-index: 2;
+}
+
+#about:hover ~ #resume-main {
+	width: 40%;
+}
+
+#resume-main {
+	background-color: #ebebd3;
+    border: 2px solid #083d77;
+   	z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+}
+
+#resume-main:hover {
+	background-color: #ff7d00;
+	width: 60%;
+	height: 60%;
+	transform: scale(1);
+	z-index: 2;
+}
+
+#resume-main:hover + #contacts-main {
+	height: 40%;
+}
+
+
