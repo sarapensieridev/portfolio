@@ -1,6 +1,20 @@
 import React from 'react';
+import { toast } from "react-toastify";
+import { useRef } from "react";
+import copy from "copy-to-clipboard";
 
 const ContactsPage = () => {
+
+	  const textRef = useRef();
+
+	const copyToClipboard = () => {
+    let copyText = textRef.current.value;
+    let isCopy = copy(copyText);
+    if (isCopy) {
+      toast.success("Copied to Clipboard");
+    }
+  	};
+
 	return (
 		<div  className="contacts-page">
 			<div className="formulario">
@@ -18,7 +32,13 @@ const ContactsPage = () => {
 			<div className="social">
 				<h2>Get in touch with me</h2>
 				<h3>You can write me to: 
-					<button className="mail-button">sarapensieri@gmail.com</button>
+					  	<input
+        				value="sarapensieri@gmail.com"
+        				disabled
+        				type="text"
+        				ref={textRef}
+      					/>
+						<button onClick={copyToClipboard}>Copy</button>
 				</h3>
 				<h3>You can call me 
 					<h4> +34 684156776 </h4>
