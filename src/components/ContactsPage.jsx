@@ -2,6 +2,9 @@ import React from 'react';
 import { toast } from "react-toastify";
 import { useRef } from "react";
 import copy from "copy-to-clipboard";
+import linkedin from "./linkedin.png"
+import github from "./github.png"
+
 
 const ContactsPage = () => {
 
@@ -20,33 +23,46 @@ const ContactsPage = () => {
 			<div className="formulario">
 				<h2>Contact Me</h2>
 				<form id="form" className="contact-form">
-					<label for="name" id="form-name" className="name-form">Name</label>
-					<input></input>
-					<label for="email" id="form-email" className="email-form">Email</label>
-					<input></input>
-					<label for="message" id="form=message" className="message-form"></label>
+					<label for="name" id="form-name" className="form-label">Name</label>
+					<input className="form-input"></input>
+					<label for="email" id="form-email" className="form-label">Email</label>
+					<input className="form-input"></input>
+					<label for="message" id="form=message" className="form-label">Message</label>
 					<textarea placeholder="Text here" required className="message-area"></textarea>
-					<button className="form-button">Submit your request</button>
+					<button className="form-button">Submit</button>
 				</form>
 			</div>
 			<div className="social">
-				<h2>Get in touch with me</h2>
-				<h3>You can write me to: 
+			   <div className="social-div">
+				<h2 className="social-1">Get In Touch</h2>
+				<div className="social-mail">
+					<h3 className="social-2">Write me</h3> 
+					  	<div className="mail">
 					  	<input
+					  	className="social-input"
         				value="sarapensieri@gmail.com"
         				disabled
         				type="text"
         				ref={textRef}
       					/>
-						<button onClick={copyToClipboard}>Copy</button>
-				</h3>
-				<h3>You can call me 
-					<h4> +34 684156776 </h4>
-					<h4> +39 3358447586 </h4>
-				</h3> 
-				<h3>You can follow me  
-				<a href="www.linkedin.com/in/sara-pensieri-a7852355" target="_blank"><img src="/home/lucho/Desktop/Programming/react-project/portfolio-sara/src/images/60ee32414a2efc28ae4a2963_icon-linkedin.svg" loading="lazy" alt="linkedin-logo"></img></a>
-				</h3>
+						<button className="social-button" onClick={copyToClipboard}>Copy</button>
+						</div>
+				</div>
+				<div className="social-phone">
+					<h3 className="social-2">Call me</h3> 
+					<div className="numbers">
+						<p className="social-3"> +34 684156776 </p>
+						<p className="social-3"> +39 3358447586 </p>
+					</div>
+				</div> 
+				<div className="social-linkedin">
+					<h3 className="social-2">Follow me</h3>  
+					<div className="img-div">
+						<a href="www.linkedin.com/in/sara-pensieri-a7852355" target="_blank"><img src={linkedin} loading="lazy" alt="linkedin-logo" className="linkedin-img"></img></a>
+						<a href="https://github.com/SaraPens123" target="_blank"><img src={github} loading="lazy" alt="github-logo" className="github-img"></img></a>
+					</div>
+				</div>
+			   </div>
 			</div>
 		</div>
 	)

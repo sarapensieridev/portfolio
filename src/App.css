@@ -207,30 +207,189 @@ body:has(#projects-main:hover) #about {
 	position: absolute;
 	background-color: #ebebd3;
 	border: 3px solid #083d77;
+	display: flex;
 }
 
-input {
-  border: unset;
-  background: #6e6e6e;
-  padding: 5px 40px;
-  color: white;
-
+.formulario {
+	width: 50%;
+	background-color: #f4d35e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-button {
-  border: unset;
-  background: black;
-  color: white;
-  padding: 5px 15px;
-  cursor: pointer;
+h2 {
+	font-size: 30px;
 }
 
-textarea {
-  border: unset;
-  background: #e3e3e3;
-  padding: 5px 40px;
-  color: black;
-  width: 200px;
-  height: 50px;
-
+h3 {
+	font-size: 25px;
 }
+
+h4 {
+	font-size: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+}
+
+.form-label {
+	width: 300px;
+	height: 60px;
+	font-size: 20px;
+	padding-top: 15px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+
+.form-input {
+	height: 50px;
+	background-color: #ebebd3;
+	border: 2px solid black;
+	color: black; 
+}
+
+.message-area {
+	height: 100px;
+	background-color: #ebebd3;
+	border: 2px solid black;
+	color: black; 
+}
+
+.form-button {
+	width: 150px;
+	height: 50px;
+	background-color: #da4167;
+	color: #ebebd3;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.social {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	height: 400px;
+}
+
+.social-1 {
+	height: 50px;
+}
+
+.social-2 {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+.social-mail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.social-phone {
+	width: 400px;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.numbers {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+.social-3 {
+	height: 40px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+
+.mail {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 60px;
+}
+
+.social-linkedin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	margin-top: 20px;
+}
+
+.social-input {
+	height: 35px;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.social-button {
+	height: 35px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #da4167;
+	color: #ebebd3;
+	width: 100px;
+}
+
+.img-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.linkedin-img {
+	width: 100px;
+	height: 100px;
+	margin-right: 15px;
+}
+
+.github-img {
+	width: 60px;
+	height: 60px;
+	margin-left: 15px;
+}
+
+
+
+
+
