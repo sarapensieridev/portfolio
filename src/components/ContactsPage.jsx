@@ -3,12 +3,14 @@ import { toast } from "react-toastify";
 import { useRef } from "react";
 import copy from "copy-to-clipboard";
 import linkedin from "./linkedin.png"
-import github from "./github.png"
+import github from "./github.png";
+import close from "./close.png"
+import { useNavigate } from "react-router-dom";
 
 
-const ContactsPage = () => {
+	const ContactsPage = () => {
 
-	  const textRef = useRef();
+	const textRef = useRef();
 
 	const copyToClipboard = () => {
     let copyText = textRef.current.value;
@@ -18,10 +20,16 @@ const ContactsPage = () => {
     }
   	};
 
+  	const navigate = useNavigate();
+  	const closeWindow = () => {
+  		navigate(-1);
+  	}
+
 	return (
 		<div  className="contacts-page">
+			<button onClick={closeWindow} className="close-button"><img src={close} alt="close-tag" className="close"></img></button>
 			<div className="formulario">
-				<h2>Contact Me</h2>
+				<h2 className="contact-me">Contact Me</h2>
 				<form id="form" className="contact-form">
 					<label for="name" id="form-name" className="form-label">Name</label>
 					<input className="form-input"></input>
