@@ -101,6 +101,10 @@ body:has(#projects-main:hover) #about {
 	width: 40%;
 }
 
+#link-contacts {
+
+}
+
 #logo {
 	background-color: #da4167;
 	color: #f4d35e;
@@ -216,6 +220,7 @@ body:has(#projects-main:hover) #about {
 	background-color: #ebebd3;
 	border: 4px solid #083d77;
 	display: flex;
+	font-family: "PT Sans", sans-serif;
 }
 
 .close-button {
@@ -303,7 +308,7 @@ form {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-left: 3px solid #083d77;
+	border-left: 4px solid #083d77;
 }
 
 .social-div {
@@ -318,6 +323,7 @@ form {
 .social-1 {
 	height: 50px;
 	font-size: 30px;
+	color: #083d77;
 }
 
 .social-2 {
@@ -439,6 +445,7 @@ form {
 	border: solid 4px #083d77;
 	display: grid;
 	grid-template-rows: 65% 35%;
+	font-family: "PT Sans", sans-serif;
 }
 
 .education-and-skills {
@@ -495,7 +502,7 @@ form {
 .experience-div {
 	padding: 15px;
 	margin-left: 50px;
-	border-right: solid 2px #083d77;
+	border-right: solid 4px #083d77;
 	margin-bottom: 50px;
 
 }
@@ -503,7 +510,7 @@ form {
 .education-div {
 	padding: 15px;
 	margin-left: 50px;
-	border-right: solid 2px #083d77;
+	border-right: solid 4px #083d77;
 }
 
 .courses {
@@ -521,12 +528,12 @@ form {
 .resume-h1 {
 	margin-bottom: 10px;
 	font-size: 30px;
-	text-transform: uppercase;
 	color: #083d77;
 }
 
 .resume-h3 {
 	font-size: 20px;
+	text-transform: uppercase;
 }
 
 .resume-p {
@@ -543,6 +550,72 @@ form {
 
 .symbol-lang {
 	color: #f4d35e;
+}
+
+
+/*ABOUT PAGE*/
+
+
+.about-page {
+	z-index:9999;
+	background-color: #ebebd3;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: grid;
+	font-family: "PT Sans", sans-serif;
+	border: solid 4px #083d77;
+}
+
+.sara {
+	max-width: 100%;
+	width: 420px;
+	height: auto;
+	border-radius: 4px;
+}
+
+.sara-image {
+	border-right: solid 4px #f4d35e;
+	padding-right: 20px;
+}
+
+.presentation {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-gap: 30px;
+	margin-left: 250px;
+	margin-right: 250px;
+	margin-top: 40px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 90px;
+	margin-left: 250px;
+}
+
+
+.about-h3 {
+	font-size: 70px;
+	color: #da4167;
+}
+
+.about-h2 {
+	font-size: 100px;
+	font-family: "Permanent Marker", sans-serif;
+	color: #083d77; 
+}
+
+.about-p {
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.presentation-p {
 }
 
 

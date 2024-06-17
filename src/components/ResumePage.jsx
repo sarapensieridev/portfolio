@@ -23,11 +23,11 @@ const closeWindow = () => {
 				<div className="courses">
 				<div className="argument-div">
 					<div className="course">
-					<h3 className="resume-h3">Introduction to SEO architecture</h3>
+					<h3 className="resume-h3">Introduction to SEO</h3>
 					<p className="resume-p">Barcelona Activa, May 2024</p>
 					</div>
 					<div className="course">
-					<h3 className="resume-h3">Wordpress:create a web from a local host</h3>
+					<h3 className="resume-h3">Wordpress: create a web from a local host</h3>
 					<p className="resume-p">Barcelona Activa, May 2024</p>
 					</div>
 					<div className="course">
