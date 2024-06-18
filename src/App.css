@@ -5,7 +5,7 @@
 }
 
 html, body {
-  background-color: #ebebd3;
+  background-color: #da4167;
   width: 100%;
   height: 100%;
 }
@@ -41,7 +41,7 @@ html, body {
     bottom: auto;
     left: 0;
     right: auto;
-   	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+   	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s, border 1s;
     overflow: hidden;
 }
 
@@ -66,7 +66,10 @@ body:has(#projects-main:hover) #logo {
     height: 20%;
     transform: translate3d(50%, 50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    z-index: 5;
+    z-index: 10;
+    animation-name: border;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
 body:has(#projects-main:hover) #logo ~ #resume-main {
@@ -80,7 +83,7 @@ body:has(#projects-main:hover) #logo ~ #contacts-main {
 
 
 body:has(#projects-main:hover) #logo ~ #about {
-	width: 60%;
+	width: 50%;
 }
 
 #projects-main:hover .link {
@@ -105,7 +108,7 @@ body:has(#projects-main:hover) #logo ~ #about {
 	bottom: auto;
 	left: auto;
 	right: 0;
-	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+	transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s, border 1s;
 	overflow: hidden;
 }
 
@@ -133,6 +136,9 @@ body:has(#contacts-main:hover) #logo {
     transform: translate3d(-50%, 50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     z-index: 10;
+    animation-name: border;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
 body:has(#contacts-main:hover) #logo ~ #resume-main {
@@ -164,21 +170,50 @@ body:has(#contacts-main:hover) #logo ~ #about {
     position: absolute;
     top: 40%;
     left: 40%;
-    transition: width 1s, height 1s , transform 1s, z-index 1s;
+    transition: width 1s, height 1s , transform 1s, z-index 1s, border 1s, background-color 1s, color 1s;
     overflow: hidden;
 }
 
 #logo:hover {
-	width: 30%;
-	height: 30%;
+	width: 40%;
+	height: 40%;
 	z-index: 2;
-	transform: scale(1);
+	background-color: #f4d35e;
+	color: #da4167;
+	transform: translate3d(-20%, -30%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .logo-font {
 	font-family: "Permanent Marker", sans-serif;
 	font-size: 52px;
 }
+
+body:has(#logo:hover) .logo-font {
+	border: solid 4px #da4167;
+	padding: 10px;
+}
+
+
+body:has(#logo:hover) #about {
+	width: 32%;
+	height: 72%;
+}
+
+body:has(#logo:hover) #resume-main {
+	width: 68%;
+	height: 32%;
+}
+
+body:has(#logo:hover) #projects-main {
+	height: 28%;
+	width: 72%;
+}
+
+body:has(#logo:hover) #contacts-main {
+	width: 28%;
+	height: 68%;
+}
+
 
 #about {
 	background-color: #ebebd3;
@@ -195,7 +230,7 @@ body:has(#contacts-main:hover) #logo ~ #about {
     bottom: 0;
     left: 0;
     right: auto;
-    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s, border 1s;
     overflow: hidden;
 }
 
@@ -223,6 +258,9 @@ body:has(#about:hover) #logo {
     transform: translate3d(75%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     z-index: 10;
+    animation-name: border;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
 body:has(#about:hover) #logo ~ #resume-main {
@@ -253,7 +291,7 @@ body:has(#about:hover) #logo ~ #contacts-main {
     bottom: 0;
     left: auto;
     right: 0;
-    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s;
+    transition: background-color 1s, width 1s, height 1s, transform 1s, z-index 1s, border 1s;
 }
 
 #resume-main:hover {
@@ -280,6 +318,9 @@ body:has(#resume-main:hover) #logo {
     transform: translate3d(0px, -50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     z-index: 10;
+    animation-name: border;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
 body:has(#resume-main:hover) #logo ~ #about {
@@ -294,9 +335,39 @@ body:has(#resume-main:hover) #logo ~ #contacts-main {
 	height: 50%;
 }
 
+@keyframes border {
+  from {border: none;}
+  to {border: 2px solid #083d77;}
+}
 
 
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
 
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
 
 
 
@@ -311,6 +382,10 @@ body:has(#resume-main:hover) #logo ~ #contacts-main {
 	border: 4px solid #083d77;
 	display: flex;
 	font-family: "PT Sans", sans-serif;
+	-webkit-animation: moveFromLeft .6s ease both;
+	animation: moveFromLeft .6s ease both;
+
+
 }
 
 .close-button {
@@ -536,6 +611,9 @@ form {
 	display: grid;
 	grid-template-rows: 65% 35%;
 	font-family: "PT Sans", sans-serif;
+	-webkit-animation: moveFromLeft .6s ease both;
+	animation: moveFromLeft .6s ease both;
+	overflow-x: hidden;
 }
 
 .education-and-skills {
@@ -655,6 +733,8 @@ form {
 	display: grid;
 	font-family: "PT Sans", sans-serif;
 	border: solid 4px #083d77;
+	-webkit-animation: moveFromLeft .6s ease both;
+	animation: moveFromLeft .6s ease both;
 }
 
 .sara {
@@ -675,7 +755,7 @@ form {
 	grid-gap: 30px;
 	margin-left: 250px;
 	margin-right: 250px;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .title {
@@ -683,7 +763,7 @@ form {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	margin-top: 90px;
+	margin-top: 50px;
 	margin-left: 250px;
 }
 
@@ -691,6 +771,8 @@ form {
 .about-h3 {
 	font-size: 70px;
 	color: #da4167;
+	line-height: 55px;
+	margin-bottom: 15px;
 }
 
 .about-h2 {
@@ -705,7 +787,23 @@ form {
 	text-transform: uppercase;
 }
 
-.presentation-p {
+
+
+
+/*PROJECTS PAGE*/
+
+
+.projects-page {
+	z-index: 9999;
+	background-color: #ebebd3;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: grid;
+	font-family: "PT Sans", sans-serif;
+	border: solid 4px #083d77;
+	-webkit-animation: moveFromLeft .6s ease both;
+	animation: moveFromLeft .6s ease both;
 }
 
 

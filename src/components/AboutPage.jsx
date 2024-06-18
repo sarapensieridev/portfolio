@@ -24,7 +24,7 @@ const closeWindow = () => {
 						<img src={sara3} alt="sara-photo" className="sara"></img>
 					</div>
 					<div className="presentation-p">
-						<h3 className="about-h3">I'm a WIP Web and Front-end Developer.</h3>
+						<h3 className="about-h3">I'm a Web and Front-end Developer.</h3>
 						<p className="about-p">Over the past 10 years, I have worked in education, as a teacher and a childhood educator and thanks to that experience I learned to be a organised, patient and empathic person. Also I understood the importance of collaboration to pursue common objectives as well I learned to communicate efficiently with people and to deal with different types of situations and problems.
 					 	I also learned how to work in stressful situations as well to lead with pressure.</p>
 				 		<p className="about-p">Throughout these years, I experienced a lot as a person and actually, I changed a lot and I understood that I needed a change in my professional career towards a job that would allow me to open my mind to other professional fields and to have a remote position.</p>
