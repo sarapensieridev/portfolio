@@ -1,0 +1,20 @@
+{
+    "slides": [
+    {
+        "src": "../images/screen1.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen2.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen3.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen4.png",
+        "alt": "Screenshot1"
+    }
+    ]
+}

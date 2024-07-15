@@ -10,6 +10,39 @@ html, body {
   height: 100%;
 }
 
+.close-button {
+	-webkit-animation: moveToLeft .6s ease both;
+	animation: moveToLeft .6s ease both;
+}
+
+@keyframes border {
+  from {border: none;}
+  to {border: 2px solid #083d77;}
+}
+
+@-webkit-keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveToLeft {
+	from { }
+	to { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+	from { }
+	to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
 
 /*APP PAGE*/
 
@@ -189,8 +222,7 @@ body:has(#contacts-main:hover) #logo ~ #about {
 }
 
 body:has(#logo:hover) .logo-font {
-	border: solid 4px #da4167;
-	padding: 10px;
+
 }
 
 
@@ -333,40 +365,6 @@ body:has(#resume-main:hover) #logo ~ #projects-main {
 
 body:has(#resume-main:hover) #logo ~ #contacts-main {
 	height: 50%;
-}
-
-@keyframes border {
-  from {border: none;}
-  to {border: 2px solid #083d77;}
-}
-
-
-@-webkit-keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); }
-}
-@keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
-}
-
-@-webkit-keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); }
-}
-@keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
-}
-
-@-webkit-keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); }
-}
-@keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); }
-}
-@keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
 }
 
 
@@ -663,10 +661,6 @@ form {
 	margin-left: 30px;
 }
 
-.skill {
-
-}
-
 .experience-div {
 	padding: 15px;
 	margin-left: 50px;
@@ -679,10 +673,6 @@ form {
 	padding: 15px;
 	margin-left: 50px;
 	border-right: solid 4px #083d77;
-}
-
-.courses {
-
 }
 
 .course {
@@ -804,6 +794,20 @@ form {
 	border: solid 4px #083d77;
 	-webkit-animation: moveFromLeft .6s ease both;
 	animation: moveFromLeft .6s ease both;
+	display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moenia-title {
+	text-align: center;
+    color: #da4167;
+    font-size: 30px;
+    font-family: "PT Sans", sans-serif;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 
