@@ -15,6 +15,22 @@
     {
         "src": "../images/screen4.png",
         "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen5.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen6.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen7.png",
+        "alt": "Screenshot1"
+    },
+    {
+        "src": "../images/screen8.png",
+        "alt": "Screenshot1"       
     }
     ]
 }

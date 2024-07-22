@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 700px;
 }
 
 .slide {
@@ -60,4 +60,14 @@
 
 .indicator-inactive {
     background-color: grey;
+}
+
+
+.carousel1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 700px;
 }
