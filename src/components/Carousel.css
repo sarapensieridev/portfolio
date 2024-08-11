@@ -71,3 +71,44 @@
     width: 1200px;
     height: 700px;
 }
+
+/*CAROUSEL RESPONSIVE*/
+/*For mobile phones*/
+
+@media only screen and (max-width: 600px) {
+.carousel {
+    display: none;
+}
+
+.carousel1 {
+    display: none;
+}
+}
+
+
+/*CAROUSEL RESPONSIVE*/
+/*For tablets*/
+
+@media only screen and (max-width: 768px) {
+    .carousel {
+       width: 586px;
+       height: 440px;
+    }
+    
+    .carousel1 {
+        width: 586px;
+        height: 440px;
+    }
+    }
+
+@media only screen and (min-width: 769px) and (max-width: 1180px) {
+    .carousel {
+        width: 620px;
+        height: 480px;
+    }
+
+    .carousel1 {
+        width: 620px;
+        height: 480px;
+    }
+}

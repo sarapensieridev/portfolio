@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Resume = () => {
 		return(
 			<div className="main" id="resume-main">
-				<a href="/resume" id="resume-link" className="link"><h1>RESUME</h1></a>
+				<Link to="/resume" id="resume-link" className="link"><h1>RESUME</h1></Link>
 			</div>
 		)
 	}

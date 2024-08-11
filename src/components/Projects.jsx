@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 const Projects = () => {
 	return(
 			<div className="main" id="projects-main">
-				<a href="/projects" id="projects-link" className="link"><h1>PROJECTS</h1></a>
+				<Link to="/projects" id="projects-link" className="link"><h1>PROJECTS</h1></Link>
 			</div>
 		)
 	}
