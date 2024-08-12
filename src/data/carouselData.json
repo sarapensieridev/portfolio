@@ -1,35 +1,35 @@
 {
     "slides": [
     {
-        "src": "../images/screen1.png",
+        "src": "./portfolio/images/screen1.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen2.png",
+        "src": "./portfolio/images/screen2.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen3.png",
+        "src": "./portfolio/images/screen3.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen4.png",
+        "src": "./portfolio/images/screen4.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen5.png",
+        "src": "./portfolio/images/screen5.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen6.png",
+        "src": "./portfolio/images/screen6.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen7.png",
+        "src": "./portfolio/images/screen7.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "../images/screen8.png",
+        "src": "./portfolio/images/screen8.png",
         "alt": "Screenshot1"       
     }
     ]

@@ -28,19 +28,8 @@ import { useNavigate } from "react-router-dom";
 	return (
 		<div  className="contacts-page">
 			<button onClick={closeWindow} className="close-button"><img src={close} alt="close-tag" className="close"></img></button>
-			<div className="formulario">
-				<h2 className="contact-me">Contact Me</h2>
-				<form id="form" className="contact-form">
-					<label for="name" id="form-name" className="form-label">Name</label>
-					<input className="form-input"></input>
-					<label for="email" id="form-email" className="form-label">Email</label>
-					<input className="form-input"></input>
-					<label for="message" id="form=message" className="form-label">Message</label>
-					<textarea placeholder="Text here" required className="message-area"></textarea>
-					<button className="form-button">Submit</button>
-				</form>
-			</div>
-			<div className="social">
+			   <div className='yellowscreen'></div>
+			   <div className="social">
 			   <div className="social-div">
 				<h2 className="social-1">Get In Touch</h2>
 				<div className="social-mail">

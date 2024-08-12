@@ -20,13 +20,6 @@ const Home = () => {
        <Resume/>
        <Contacts/>
        <Projects/>
-       <Routes>
-         <Route path="logo" element={<Logo />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="resume" element={<ResumePage />} />
-          <Route path="contacts" element={<ContactsPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-        </Routes>
     </div>
       )
   }
