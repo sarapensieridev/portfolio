@@ -1490,186 +1490,82 @@ body:has(#logo:hover) #contacts-main {
 
 /*PROJECTS PAGE*/
 
-
 .projects-page {
 	z-index: 9999;
 	background-color: #ebebd3;
+	position: relative;
 	width: 100%;
-	height: auto;
-	position: absolute;
-	display: grid;
 	font-family: "PT Sans", sans-serif;
 	border: solid 4px #083d77;
 	-webkit-animation: moveFromLeft .6s ease both;
 	animation: moveFromLeft .6s ease both;
-	display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-	overflow-y: auto;
 }
 
-.moenia-pres {
-	height: 150vh;
+.projects {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	padding: 20px;
-	margin-top: 850px;
-	position: relative;
 }
 
-.moenia-title {
-	text-align: center;
-    color: #da4167;
-    font-size: 40px;
-    font-family: "PT Sans", sans-serif;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-	position: relative;
-}
-
-.moenia-paragraph {
+.carousel-container {
 	display: flex;
-	flex-direction: column;
-	border-bottom: 3px solid #f4d35e;
-	position: absolute;
-	margin-top: 100px;
-	padding-bottom: 30px;
-}
-
-
-.moenia-p {
-	font-size: 18px;
-	text-align: justify;
-	margin-bottom: 15px;
-	font-family: "PT Sans", sans-serif;
-}
-
-.a-paragraph {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 1880px;
-}
-
-.moenia-pres1 {
-	height: 150vh;
-	padding: 20px;
-	top: 350px;
-	position: relative;
-}
-
-.moenia-title1 {
-	text-align: center;
-    color: #da4167;
-    font-size: 40px;
-    font-family: "PT Sans", sans-serif;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-	position: relative;
-}
-
-.moenia-paragraph1 {
-	display: flex;
-	flex-direction: column;
-	border-bottom: 3px solid #f4d35e;
-	position: absolute;
-	margin-top: 100px;
-	padding-bottom: 30px;
-}
-
-.moenia-p1 {
-	font-size: 18px;
-	text-align: justify;
-	margin-bottom: 15px;
-	font-family: "PT Sans", sans-serif;
-}
-
-.a-paragraph1 {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 1880px;
-}
-
-/*PROJECTS PAGE RESPONSIVE*/
-/*For mobile phones*/
-
-@media only screen and (max-width: 600px) and (min-height: 600px) {
-.projects-page {
-	position: absolute;
-	display: flex;
-}
-
-.moenia-pres {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: center;
-	flex: 1;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.moenia-title {
-	flex: 1;
-	font-size: 30px;
-}
-
-.moenia-paragraph {
-	flex: 1;
 	justify-content: center;
 	align-items: center;
 }
 
-.moenia-pres1 {
-	position: relative;
+.project-pres {
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: center;
+}
+
+.project-title {
+	display: flex;
+	justify-content: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #da4167;
+	padding: 20px 0px;
+}
+
+.project-paragraph{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	flex: 1;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding: 40px 30px;
+	margin: 0px 80px;
+	border-bottom: 4px solid #f4d35e;
 }
 
-.moenia-title1 {
-	flex: 1;
-	font-size: 30px;
-}
-.moenia-paragraph1 {
-	flex: 1;
+.project-p {
+	font-size: 20px;
+	text-align: justify;
 }
 
-}
 
 /*PROJECTS PAGE RESPONSIVE*/
-/*For tablets*/
 
+@media only screen and (max-width: 600px) {
 
-@media only screen and (min-width: 769px) and (max-width: 1180px) {
-
-	.projects-page{
-		overflow-x: hidden;
+	.projects {
+		margin-top: 30px;
 	}
 
-	.moenia-pres {
-		margin-top: -400px;
+	.project-title {
+		font-size: 30px;
+		padding-top: 30px ;
+		padding-bottom: 30px;
 	}
 
-	.moenia-paragraph {
-		margin-top: -190px;
+	.project-paragraph {
+		margin: 0px 10px;
+		padding: 20px 10px;
 	}
 
-	.moenia-pres1 {
-		margin-top: 1750px;
-	}
-
-	.moenia-paragraph1 {
-		margin-top: -230px;
+	.project-p {
+		font-size: 20px;
 	}
 }
-
-
-
 

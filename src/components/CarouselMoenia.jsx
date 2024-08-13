@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Carousel.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export const Carousel1 = ({data}) => {
+export const CarouselMoenia = ({data}) => {
     
     const [slide, setSlide] = useState(0);
 
@@ -14,7 +14,7 @@ export const Carousel1 = ({data}) => {
         setSlide(slide === 0 ? data.length -1: slide - 1)
     }
 
-    return  <div className="carousel1">
+    return  <div className="carousel">
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick={previousSlide}/>
         {data.map((item, idx) => {
             return <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? "slide" : "slide slide-hidden"} />
