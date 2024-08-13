@@ -363,185 +363,90 @@ body:has(#resume-main:hover) #logo ~ #contacts-main {
 }
 
 /*APP PAGE RESPONSIVE*/
-/*For mobile phones*/
 
-@media only screen and (max-width: 600px) {
-
-
-.app-main{ 
+@media only screen and (max-width: 1280px) and (max-height: 750px) {
+.app-main {
 	width: 100%;
 	height: 100%;
 }
 
+.link {
+	font-size: 20px;
+}
+
 #logo {
-width: 100%;
-height: 18%;
-top: 0%;
-left: 0%;
-transition: none;
+	width: 100%;
+	height: 20%;
+	top: 0;
+	left: 0;
 }
-
-
-.logo-font {
-	font-family: "Permanent Marker", sans-serif;
-	font-size: 52px;
-}
-
 #logo:hover {
 	background-color: #f4d35e;
 	color: #da4167;
 	width: 100%;
-	height: 16%;
+	height: 20%;
 	transition: none;
 	transform: none;
 }
 
 body:has(#logo:hover) #about {
 	width: 100%;
-	height: 21.25%;
+	height: 20%;
 }
 
 body:has(#logo:hover) #resume-main {
 	width: 100%;
-	height: 21.25%;
+	height: 20%;
 }
 
 body:has(#logo:hover) #projects-main {
-	height: 21.25%;
+	height: 20%;
 	width: 100%;
 }
 
 body:has(#logo:hover) #contacts-main {
 	width: 100%;
-	height: 21.25%;
-}
-
-#about{
-	width: 100%;
-	height: 21.25%;
-	bottom: 188px;
-}
-
-#about:hover {
-	background-color: #da4167;
-	width: 100%;
-	height: 21.25%;
-	transform: none;
-	z-index: 2;
-}
-
-#about:hover ~ #resume-main {
-	width: 100%;
-}
-
-#about:hover .link {
-	color:#f4d35e;
-	padding: 15px;
-	border: 4px solid #f4d35e;
-}
-
-body:has(#about:hover) #logo {
-	width: 100%;
-    height: 16%;
-    transform: none;
-    z-index: 10;
-	animation: none;
-	font-family: "Permanent Marker", sans-serif;
-}
-
-body:has(#about:hover) #logo ~ #resume-main {
-	width: 100%;
-	height: 21.25%;
-}
-
-body:has(#about:hover) #logo ~ #projects-main {
-	width: 100%;
-}
-
-body:has(#about:hover) #logo ~ #contacts-main {
-	width: 100%;
-}
-
-#resume-main {
-	width: 100%;
-	height: 21.25%;
-}
-
-
-#resume-main:hover {
-	background-color: #da4167;
-	width: 100%;
-	height: 21.25%;
-	transform: none;
-	z-index: 2;
-}
-
-#resume-main:hover ~ #contacts-main {
-	height: 21.25%;
-}
-
-#resume-main:hover .link {
-	color:#f4d35e;
-	padding: 15px;
-	border: 4px solid #f4d35e;
-}
-
-body:has(#resume-main:hover) #logo {
-	width: 100%;
-    height: 16%;
-    transform: none;
-	z-index: 10;
-}
-
-body:has(#resume-main:hover) #logo ~ #about {
-	height: 21.25%;
-}
-
-body:has(#resume-main:hover) #logo ~ #projects-main {
-	height:21.25%;
-}
-
-body:has(#resume-main:hover) #logo ~ #contacts-main {
-	height: 21.25%;
+	height: 20%;
 }
 
 #projects-main {
-	top: 153px;
 	width: 100%;
-	height: 21.25%;
+	height: 20%;
+	top: 20%;
 }
 
 #projects-main:hover{
 	background-color: #da4167;
 	width: 100%;
-	height: 21.25%;
+	height: 20%;
 	transform: none;
 	z-index: 2;
 }
 
 body:has(#projects-main:hover) #about {
-	height: 21.25%;
+	height: 20%;
 }
 
 body:has(#projects-main:hover) #contacts-main {
 	width: 100%;
+	height: 20%;
 }
 
 body:has(#projects-main:hover) #logo {
 	width: 100%;
-    height: 16%;
+    height: 20%;
     transform: none;
     z-index: 10;
 	animation: none;
 }
 
 body:has(#projects-main:hover) #logo ~ #resume-main {
-	height: 21.25%;
+	height: 20%;
 	width: 100%;
 }
 
 body:has(#projects-main:hover) #logo ~ #contacts-main {
-	height: 21.25%;
+	height: 20%;
 }
 
 
@@ -550,15 +455,16 @@ body:has(#projects-main:hover) #logo ~ #about {
 }
 
 #contacts-main {
-	top:342px;
-	height: 21.25%;
 	width: 100%;
+	height: 20%;
+	top: 40%;
 }
+
 
 #contacts-main:hover {
 	background-color: #da4167;
 	width: 100%;
-	height: 21.25%;
+	height: 20%;
 	transform: none;
 	z-index: 2;
 }
@@ -569,7 +475,356 @@ body:has(#projects-main:hover) #logo ~ #about {
 
 body:has(#contacts-main:hover) #logo {
 	width: 100%;
-    height: 16%;
+    height: 20%;
+    transform: none;
+	animation: none;
+	z-index: 10;
+}
+
+body:has(#contacts-main:hover) #logo ~ #resume-main {
+	height: 20%;
+	width: 100%;
+}
+
+body:has(#contacts-main:hover) #logo ~ #projects-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#contacts-main:hover) #logo ~ #about {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#logo:hover) #about {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#logo:hover) #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#logo:hover) #projects-main {
+	height: 20%;
+	width: 100%;
+}
+
+body:has(#logo:hover) #contacts-main {
+	width: 100%;
+	height: 20%;
+}
+
+#about {
+	width: 100%;
+	height: 20%;
+	top: 60%;
+}
+
+#about:hover {
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+#about:hover ~ #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+#about:hover .link {
+	font-size: 20px;
+	border: none;
+}
+
+#projects-main:hover .link {
+	font-size: 20px;
+	border: none;
+}
+#contacts-main:hover .link {
+	font-size: 20px;
+	border: none;
+}
+#resume-main:hover #resume-link {
+	font-size: 20px;
+	border: none;
+}
+
+
+body:has(#about:hover) #logo {
+	width: 100%;
+    height: 20%;
+    transform: none;
+    z-index: 10;
+	animation: none;
+	font-family: "Permanent Marker", sans-serif;
+}
+
+body:has(#about:hover) #logo ~ #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#about:hover) #logo ~ #projects-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#about:hover) #logo ~ #contacts-main {
+	width: 100%;
+	height: 20%;
+}
+
+#resume-main {
+	width: 100%;
+	height: 20%;
+	top: 80%;
+}
+
+
+#resume-main:hover {
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+#resume-main:hover ~ #contacts-main {
+	height: 20%;
+}
+
+#resume-main:hover .link {
+	color:#f4d35e;
+}
+
+body:has(#resume-main:hover) #logo {
+	width: 100%;
+    height: 20%;
+    transform: none;
+	z-index: 10;
+}
+
+body:has(#resume-main:hover) #logo ~ #about {
+	height: 20%;
+}
+
+body:has(#resume-main:hover) #logo ~ #projects-main {
+	height:20%;
+}
+
+body:has(#resume-main:hover) #logo ~ #contacts-main {
+	height: 20%;
+}
+}
+
+@media only screen and (max-width: 1280px) and (min-height: 750px) and (max-height: 1400px) {
+
+
+.app-main{ 
+	width: 100%;
+	height: 100%;
+}
+
+#logo {
+width: 100%;
+height: 20%;
+top: 0;
+left: 0;
+transition: none;
+}
+
+#logo:hover {
+	background-color: #f4d35e;
+	color: #da4167;
+	width: 100%;
+	height: 20%;
+	transition: none;
+	transform: none;
+}
+
+body:has(#logo:hover) #about {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#logo:hover) #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#logo:hover) #projects-main {
+	height: 20%;
+	width: 100%;
+}
+
+body:has(#logo:hover) #contacts-main {
+	width: 100%;
+	height: 20%;
+}
+
+#about{
+	width: 100%;
+	height: 20%;
+	top: 60%;
+}
+
+#about:hover {
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+#about:hover ~ #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+#about:hover .link {
+	color:#f4d35e;
+	padding: 15px;
+	border: 4px solid #f4d35e;
+}
+
+body:has(#about:hover) #logo {
+	width: 100%;
+    height: 20%;
+    transform: none;
+    z-index: 10;
+	animation: none;
+	font-family: "Permanent Marker", sans-serif;
+}
+
+body:has(#about:hover) #logo ~ #resume-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#about:hover) #logo ~ #projects-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#about:hover) #logo ~ #contacts-main {
+	width: 100%;
+	height: 20%;
+}
+
+#resume-main {
+	width: 100%;
+	height: 20%;
+	top: 80%;
+}
+
+
+#resume-main:hover {
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+#resume-main:hover ~ #contacts-main {
+	height: 20%;
+}
+
+#resume-main:hover .link {
+	color:#f4d35e;
+	padding: 15px;
+	border: 4px solid #f4d35e;
+}
+
+body:has(#resume-main:hover) #logo {
+	width: 100%;
+    height: 20%;
+    transform: none;
+	z-index: 10;
+}
+
+body:has(#resume-main:hover) #logo ~ #about {
+	height: 20%;
+}
+
+body:has(#resume-main:hover) #logo ~ #projects-main {
+	height:20%;
+}
+
+body:has(#resume-main:hover) #logo ~ #contacts-main {
+	height: 20%;
+}
+
+#projects-main {
+	top: 20%;
+	width: 100%;
+	height: 20%;
+}
+
+#projects-main:hover{
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+body:has(#projects-main:hover) #about {
+	height: 20%;
+}
+
+body:has(#projects-main:hover) #contacts-main {
+	width: 100%;
+	height: 20%;
+}
+
+body:has(#projects-main:hover) #logo {
+	width: 100%;
+    height: 20%;
+    transform: none;
+    z-index: 10;
+	animation: none;
+}
+
+body:has(#projects-main:hover) #logo ~ #resume-main {
+	height: 20%;
+	width: 100%;
+}
+
+body:has(#projects-main:hover) #logo ~ #contacts-main {
+	height: 20%;
+}
+
+
+body:has(#projects-main:hover) #logo ~ #about {
+	width: 100%;
+}
+
+#contacts-main {
+	top: 40%;
+	height: 20%;
+	width: 100%;
+}
+
+#contacts-main:hover {
+	background-color: #da4167;
+	width: 100%;
+	height: 20%;
+	transform: none;
+	z-index: 2;
+}
+
+#contacts-main:hover ~ #projects-main {
+	width: 100%;
+}
+
+body:has(#contacts-main:hover) #logo {
+	width: 100%;
+    height: 20%;
     transform: none;
 	animation: none;
 	z-index: 10;
@@ -587,331 +842,28 @@ body:has(#contacts-main:hover) #logo ~ #projects-main {
 
 body:has(#contacts-main:hover) #logo ~ #about {
 	width: 100%;
-	height: 21.25%;
-}
-
-body:has(#logo:hover) #about {
-	width: 100%;
-	height: 21.25%;
-}
-
-body:has(#logo:hover) #resume-main {
-	width: 100%;
-	height: 21.25%;
-}
-
-body:has(#logo:hover) #projects-main {
-	height: 21.25%;
-	width: 100%;
-}
-
-body:has(#logo:hover) #contacts-main {
-	width: 100%;
-	height: 21.25%;
-}
-}
-
-@media only screen and (max-width: 400px) {
-
-	.app-main {
-		width: 100%;
-		height: 100%;
-	}
-
-	#about {
-		height: 21%;
-		top: 375px;
-	}
-
-	#projects-main {
-		height: 21%;
-		top: 112px;
-	}
-
-	#contacts-main {
-		height: 21%;
-		top: 242px;
-	}
-
-	#resume-main {
-		height: 21%;
-	}
-}
-
-/*APP PAGE RESPONSIVE*/
-/*For tablets*/
-
-@media only screen and (min-width: 600px) and (max-width: 768px){
-	
-#logo {
-	width: 38%;
 	height: 20%;
-	top: 41%;
-	left: 30%;
-   }
-  
-#logo:hover {
-	left: 39%;
-	height: 37%;
-	width: 35%;
-	top: 42%;
-	text-align: center;
 }
-
-.logo-font {
-	font-size: 40px;
-}
-
 
 body:has(#logo:hover) #about {
-	height: 69%;
-	width: 32%;
+	width: 100%;
+	height: 20%;
 }
 
 body:has(#logo:hover) #resume-main {
-	width: 68%;
+	width: 100%;
+	height: 20%;
 }
 
 body:has(#logo:hover) #projects-main {
-	height: 31%;
-	width: 67%;
+	height: 20%;
+	width: 100%;
 }
 
 body:has(#logo:hover) #contacts-main {
-	width: 33%;
+	width: 100%;
+	height: 20%;
 }
-
-#about {
-	height: 59%;
-	width: 30%;
-}
-
-#resume-main {
-	height: 39%;
-	width: 70%;
-}
-
-#contacts-main {
-	height: 61%;
-	width: 32%;
-}
-
-#contacts-main:hover {
-	width: 47%;
-}
-
-#projects-main {
-	height: 41%;
-	width: 68%;
-}
-
-
-body:has(#projects-main:hover) #logo {
-	left: 36%;
-	top: 40%;
-	text-align: center;
-	width: 22.5%;
-}
-
-
-body:has(#projects-main:hover) #logo ~ #about {
-	width: 47.5%;
-}
-
-body:has(#projects-main:hover) #logo ~ #resume-main {
-	width: 52.5%;
-}
-
-body:has(#contacts-main:hover) #logo {
-	width: 23%;
-	text-align: center;
-	left: 41.5%;
-	top: 40%;
-}
-
-body:has(#contacts-main:hover) #logo ~ #projects-main {
-	width: 53%;
-}
-
-body:has(#resume-main:hover) #logo {
-	left: 40%;
-	top: 40%;
-	text-align: center;
-	width: 23%;
-}
-
-body:has(#resume-main:hover) #logo ~ #about {
-	width: 40%;
-}
-
-body:has(#resume-main:hover) #logo ~ #projects-main {
-	width: 63%;
-}
-
-body:has(#resume-main:hover) #logo ~ #contacts-main {
-	width: 37%;
-}
-
-#about:hover {
-	height: 65%;
-	width: 45%;
-}
-
-body:has(#about:hover) #logo {
-	width: 23%;
-	text-align: center;
-	top: 35%;
-	left: 27.5%;
-}
-
-body:has(#about:hover) #contacts-main ~ #projects-main {
-	height: 35%;
-	width: 67.5%;
-}
-
-body:has(#about:hover) #resume-main ~ #contacts-main {
-	height: 55%;
-	width: 32.5%;
-}
-
-body:has(#about:hover) #about ~ #resume-main {
-	height: 45%;
-	width: 55%;
-}
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1060px){
-	#logo {
-		width: 30%;
-		height: 20%;
-		left: 35%;
-	}
-
-	.logo-font {
-		text-align: center;
-	}
-
-	#logo:hover {
-		left: 39%;
-		width: 35%;
-	}
-
-	#contacts-main {
-		width: 35%;
-	}
-
-	#contacts-main:hover {
-		width: 47%;
-	}
-
-	#about {
-		width: 35%;
-	}
-
-	#about:hover {
-		width: 47%;
-	}
-
-	#projects-main {
-		width: 65%;
-	}
-
-	#projects-main:hover {
-		width: 67%;
-	}
-
-	#resume-main {
-		width: 65%;
-	}
-
-	.link {
-		font-size: 25px;
-	}
-
-	body:has(#logo:hover) #projects-main {
-		width: 67%;
-	}	
-
-	body:has(#logo:hover) #contacts-main {
-		width: 33%;
-	}
-
-	body:has(#projects-main:hover) #logo {
-		left: 32.5%;
-		width: 23%;
-	}
-
-	body:has(#projects-main:hover) .logo-font {
-		font-size: 42px;
-	}
-
-	body:has(#projects-main:hover) #logo ~ #about {
-		width: 44.5%;
-	}
-
-	body:has(#projects-main:hover) #logo ~ #resume-main {
-		width: 55.5%;
-	}
-	
-	body:has(#projects-main:hover) #contacts-main {
-		width: 33%;
-	}
-
-	body:has(#contacts-main:hover) #logo {
-		left: 41.5%;
-		width: 23%;
-	}
-
-	body:has(#contacts-main:hover) .logo-font {
-		font-size: 42px;
-	}
-
-	body:has(#contacts-main:hover) #logo ~ #projects-main {
-		width: 53%;
-	}
-
-	body:has(#resume-main:hover) #logo {
-		width: 23%;
-		left: 40%;
-	}
-
-	body:has(#resume-main:hover) .logo-font {
-		font-size: 42px;
-	}
-
-	body:has(#resume-main:hover) #logo ~ #about {
-		width: 40%;
-	}
-
-	body:has(#resume-main:hover) #logo ~ #projects-main {
-		width: 63%;
-	}
-
-	body:has(#resume-main:hover) #logo ~ #contacts-main {
-		width: 37%;
-	}
-
-	body:has(#about:hover) #logo {
-		left: 29.5%;
-		width: 23%;
-	}
-
-	body:has(#about:hover) .logo-font {
-		font-size: 42px;
-	}
-
-	body:has(#about:hover) #contacts-main ~ #projects-main {
-		width: 69.5%;
-	}
-
-	body:has(#about:hover) #resume-main ~ #contacts-main {
-		width: 30.5%;
-	}
-
-	body:has(#about:hover) #about ~ #resume-main {
-		width: 53%;
-	}
 }
 
 /*CONTACTS PAGE*/ 
@@ -970,13 +922,11 @@ body:has(#about:hover) #about ~ #resume-main {
 .social-1 {
 	font-size: 60px;
 	color: #083d77;
-	padding: 10px 0px;
 }
 
 .social-2 {
 	text-transform: uppercase;
 	font-size: 35px;
-	padding: 10px 0px;
 }
 
 
@@ -984,7 +934,7 @@ body:has(#about:hover) #about ~ #resume-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px 0px;
+	margin-top: 18px;
 }
 
 .social-phone {
@@ -992,7 +942,7 @@ body:has(#about:hover) #about ~ #resume-main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 0px;
+	margin-top: 20px;
 }
 
 .numbers {
@@ -1012,6 +962,7 @@ body:has(#about:hover) #about ~ #resume-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 13px 0px;
 }
 
 .social-linkedin {
@@ -1019,7 +970,7 @@ body:has(#about:hover) #about ~ #resume-main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .social-input {
@@ -1050,7 +1001,6 @@ body:has(#about:hover) #about ~ #resume-main {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 0px;
 }
 
 .linkedin-img {
@@ -1066,125 +1016,80 @@ body:has(#about:hover) #about ~ #resume-main {
 }
 
 
-/*CONTACTS PAGE*/
-/*For mobile phone*/
+/*CONTACTS PAGE RESPONSIVE*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) and (max-height: 750px) {
+ .contacts-page {
+	width: 100%;
+	height: 100%;
+ }
 
-	.contacts-page {
-		flex-direction: column-reverse;
-	}
+ .social {
+	width: 100%;
+ }
 
-	.social {
-		width: 100%;
-		height: 50%;
-		flex-direction: row;
-		border-bottom: 4px solid #083d77;
-		border-left: none;
-	}
+ .social-1 {
+	font-size: 40px;
+ }
 
-	.mail {
-		flex-direction: column;
-	}
+ .social-2{
+	font-size: 25px;
+ }
 
-	.formulario {
-		width: 100%;
-		height: 50%;
-	}
+ .social-3 {
+	font-size: 20px;
+ }
 
-	.form-button {
-		align-self: center;
-	}
+ .social-input {
+	font-size: 20px;
+ }
 
-	.contact-me {
-		color: #083d77;
-	}
+ .social-button{
+	height: 30px;
+	font-size: 20px;
+ }
 
-	.contact-form {
-		width: 350px;
-	}
+ .numbers {
+	flex-direction: column;
+ }
+
+ .linkedin-img {
+	width: 80px;
+	height: 80px;
+ }
+
+ .github-img {
+	width: 50px;
+	height: 50px;
+ }
 }
 
-/*CONTACTS PAGE*/
-/*For tablets*/
-
-@media only screen and (max-width: 768px) {
-	.contacts-page {
-		flex-direction: column-reverse;
-	}
-
-	.social {
-		width: 100%;
-		height: 50%;
-		border-left: none;
-		border-bottom: 4px solid #083d77;
-	}
-
-	.formulario {
-		width: 100%;
-		height: 50%;
-	}
-
-	.social-mail {
-		margin-bottom: 25px;
-	}
-
-	.mail{
-		flex-direction: column;
-		margin-bottom: 10px;
-	}
-
-	.contact-form {
-		width: 350px;
-	}
-
-	}
-
-@media only screen and (min-width: 769px) and (max-width: 1180px) {
-	.contact-me {
-		font-size: 40px;
-	}
-
-	.contact-form {
-		width: 380px;
-	}
-
-	.form-label {
-		font-size: 25px;
-	}
-
-	.form-button {
-		font-size: 25px;
-	}
-
-	.social-phone {
-		margin-top: 45px;
-		margin-bottom: 45px;
-	}
-
+@media only screen and (max-width: 768px) and (min-height: 750px) {
 	.social-1 {
-		font-size: 40px;
-	}
+		font-size: 35px;
+	 }
+	
+	 .social-2{
+		font-size: 25px;
+	 }
+	
+	 .social-3 {
+		font-size: 20px;
+	 }
 
-	.social-2 {
-		font-size: 30px;
-	}
-
-	.social-3 {
-		font-size: 23px;
-	}
-
-	.mail {
+	 .numbers {
 		flex-direction: column;
-	}
-
-	.social-mail {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
+	 }
+	
+	 .social-input {
+		font-size: 20px;
+	 }
+	
+	 .social-button{
+		height: 30px;
+		font-size: 20px;
+	 }
 }
-
-
 
 /*RESUME PAGE*/
 
@@ -1301,7 +1206,38 @@ body:has(#about:hover) #about ~ #resume-main {
 }
 
 /*RESUME PAGE RESPONSIVE*/
-/*For mobile phones*/
+
+
+@media only screen and (min-width:600px) and (min-height: 300px) {
+	.resume-page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.languages-and-experience {
+		flex: 1;
+	}
+
+	.education-and-skills {
+		flex: 1;
+	}
+}
+
+
+@media only screen and (min-width:600px) and (min-height: 1000px) {
+	.resume-page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.languages-and-experience {
+		flex: 1;
+	}
+
+	.education-and-skills {
+		flex: 1;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -1362,9 +1298,6 @@ body:has(#about:hover) #about ~ #resume-main {
 }
 }
 
-/*RESUME PAGE RESPONSIVE*/
-/*For tablets*/
-
 @media only screen and (max-width: 768px) {
 	.languages-and-experience {
 		margin-top: 130px;
@@ -1390,25 +1323,6 @@ body:has(#about:hover) #about ~ #resume-main {
 
 	.resume-h1 {
 		font-size: 25px;
-	}
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1180px) {
-
-	.languages-and-experience {
-		margin-top: 300px;
-	}
-
-	.resume-h1 {
-		font-size: 40px;
-	}
-
-	.resume-h3 {
-		font-size: 23px;
-	}
-
-	.skills-grid {
-		grid-template-columns:  50% 50%;
 	}
 }
 
@@ -1596,24 +1510,30 @@ body:has(#about:hover) #about ~ #resume-main {
 	overflow-y: auto;
 }
 
+.moenia-pres {
+	height: 150vh;
+	padding: 20px;
+	margin-top: 850px;
+	position: relative;
+}
+
 .moenia-title {
 	text-align: center;
     color: #da4167;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "PT Sans", sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .moenia-paragraph {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
-	top: 880px;
-	right: 100px;
-	left: 100px;
 	border-bottom: 3px solid #f4d35e;
-
+	position: absolute;
+	margin-top: 100px;
+	padding-bottom: 30px;
 }
 
 
@@ -1632,32 +1552,29 @@ body:has(#about:hover) #about ~ #resume-main {
 }
 
 .moenia-pres1 {
-	position: absolute;
-	margin-top: 2200px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	height: 150vh;
+	padding: 20px;
+	top: 350px;
+	position: relative;
 }
 
 .moenia-title1 {
 	text-align: center;
     color: #da4167;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "PT Sans", sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .moenia-paragraph1 {
-	position: absolute;
-	top: 800px;
 	display: flex;
 	flex-direction: column;
-	right: 100px;
-	left: 100px;
 	border-bottom: 3px solid #f4d35e;
+	position: absolute;
+	margin-top: 100px;
+	padding-bottom: 30px;
 }
 
 .moenia-p1 {
@@ -1674,86 +1591,56 @@ body:has(#about:hover) #about ~ #resume-main {
 	top: 1880px;
 }
 
-.moenia-p-link {
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-
-.moenia-link {
-	color: #da4167;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.moenia-p-link1 {
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-
-.moenia-link1 {
-	color: #da4167;
-	text-decoration: none;
-	cursor: pointer;
-}
-
 /*PROJECTS PAGE RESPONSIVE*/
 /*For mobile phones*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-height: 600px) {
+.projects-page {
+	position: absolute;
+	display: flex;
+}
 
-	.projects-page {
-		width: 100%;
-		height: 100%;
-		overflow-x: hidden;
-	}
+.moenia-pres {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
-	.moenia-title {
-		margin-top: -370px;
-	}
+.moenia-title {
+	flex: 1;
+	font-size: 30px;
+}
 
-	.moenia-paragraph{
-		top:140px;
-		left: 20px;
-		right: 20px;
-	}
+.moenia-paragraph {
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
 
-	.moenia-title1 {
-		margin-top: 330px;
-	}
+.moenia-pres1 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
-	.moenia-pres {
-		margin-top: 140px;
-	}
+.moenia-title1 {
+	flex: 1;
+	font-size: 30px;
+}
+.moenia-paragraph1 {
+	flex: 1;
+}
 
-	.moenia-pres1 {
-		margin-top: 940px;
-	}
-
-	.moenia-paragraph1 {
-		top: 390px;
-		left: 20px;
-		right: 20px;
-	}
-
-	.moenia-p-link {
-		margin-bottom: 15px;
-	}
-
-	.moenia-link {
-		color: #da4167;
-		text-decoration: none;
-		cursor: pointer;		
-	}
-
-	.moenia-p-link1 {
-		margin-bottom: 15px;
-	}
-
-	.moenia-link1 {
-		color: #da4167;
-		text-decoration: none;
-		cursor: pointer;
-	}
 }
 
 /*PROJECTS PAGE RESPONSIVE*/
