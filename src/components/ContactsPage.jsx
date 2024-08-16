@@ -2,8 +2,8 @@ import React from 'react';
 import { toast } from "react-toastify";
 import { useRef } from "react";
 import copy from "copy-to-clipboard";
-import linkedin from "./linkedin.png"
-import github from "./github.png";
+import linkedin from "../images/linkedin.png"
+import github from "../images/github.png";
 import close from "./close.png"
 import { useNavigate } from "react-router-dom";
 
@@ -55,8 +55,8 @@ import { useNavigate } from "react-router-dom";
 				<div className="social-linkedin">
 					<h3 className="social-2">Follow me</h3>  
 					<div className="img-div">
-						<a href="www.linkedin.com/in/sara-pensieri-a7852355" target="_blank"><img src={linkedin} loading="lazy" alt="linkedin-logo" className="linkedin-img"></img></a>
-						<a href="https://github.com/SaraPens123" target="_blank"><img src={github} loading="lazy" alt="github-logo" className="github-img"></img></a>
+						<a href='https://www.linkedin.com/in/sara-pensieri-a7852355'><img src={linkedin} loading="lazy" alt="linkedin-logo" className="linkedin-img"></img></a>
+						<a href='https://github.com/sarapensieridev'><img src={github} loading="lazy" alt="github-logo" className="github-img"></img></a>
 					</div>
 				</div>
 			   </div>

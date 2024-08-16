@@ -1,9 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import close from "./close.png"
-import sara3 from "./sara3.jpg"
-
-
+import sara3 from "../images/sara3.jpg"
 
 const AboutPage = () => {
 
@@ -21,7 +19,7 @@ const closeWindow = () => {
 				</div>
 				<div className="presentation">
 					<div className="sara-image">
-						<img src={sara3} alt="sara-photo" className="sara"></img>
+						<img src={sara3} alt="Sara with pink background" className="sara"></img>
 					</div>
 					<div className="presentation-p">
 						<h3 className="about-h3">I'm a Web and Front-end Developer.</h3>

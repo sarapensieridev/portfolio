@@ -17,7 +17,8 @@ export const CarouselMoenia = ({data}) => {
     return  <div className="carousel">
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick={previousSlide}/>
         {data.map((item, idx) => {
-            return <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? "slide" : "slide slide-hidden"} />
+            const prefix = window.location.host === 'localhost:3000' ? 'portfolio/' : ''
+            return <img src={`./${prefix}${item.src}`} alt={item.alt} key={idx} className={slide === idx ? "slide" : "slide slide-hidden"} />
         })}
         <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide}/>
         <span className="indicators">

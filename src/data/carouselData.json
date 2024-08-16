@@ -2,176 +2,176 @@
 {
     "slides": [
     {
-        "src": "./portfolio/images/moenia1.png",
+        "src": "images/moenia1.png",
         "alt": "Screenshot1"
     },
     {
-        "src": "./portfolio/images/moenia2.png",
+        "src": "images/moenia2.png",
         "alt": "Screenshot2"
     },
     {
-        "src": "./portfolio/images/moenia3.png",
+        "src": "images/moenia3.png",
         "alt": "Screenshot3"
     },
     {
-        "src": "./portfolio/images/moenia4.png",
+        "src": "images/moenia4.png",
         "alt": "Screenshot4"
     },
     {
-        "src": "./portfolio/images/moenia5.png",
+        "src": "images/moenia5.png",
         "alt": "Screenshot5"
     },
     {
-        "src": "./portfolio/images/moenia6.png",
+        "src": "images/moenia6.png",
         "alt": "Screenshot6"
     },
     {
-        "src": "./portfolio/images/moenia7.png",
+        "src": "images/moenia7.png",
         "alt": "Screenshot7"
     },
     {
-        "src": "./portfolio/images/moenia8.png",
+        "src": "images/moenia8.png",
         "alt": "Screenshot8"       
     },
     {
-        "src": "./portfolio/images/moenia9.png",
+        "src": "images/moenia9.png",
         "alt": "Screenshot9"
     },
     {
-        "src": "./portfolio/images/moenia10.png",
+        "src": "images/moenia10.png",
         "alt": "Screenshot10"
     },
     {
-        "src": "./portfolio/images/moenia11.png",
+        "src": "images/moenia11.png",
         "alt": "Screenshot11"
     },
     {
-        "src": "./portfolio/images/moenia12.png",
+        "src": "images/moenia12.png",
         "alt": "Screenshot12"
     },    {
-        "src": "./portfolio/images/moenia13.png",
+        "src": "images/moenia13.png",
         "alt": "Screenshot13"
     },    {
-        "src": "./portfolio/images/moenia14.png",
+        "src": "images/moenia14.png",
         "alt": "Screenshot14"
     },    {
-        "src": "./portfolio/images/moenia15.png",
+        "src": "images/moenia15.png",
         "alt": "Screenshot15"
     },
     {
-        "src": "./portfolio/images/moenia16.png",
+        "src": "images/moenia16.png",
         "alt": "Screenshot16"
     },    {
-        "src": "./portfolio/images/moenia17.png",
+        "src": "images/moenia17.png",
         "alt": "Screenshot17"
     },    {
-        "src": "./portfolio/images/moenia18.png",
+        "src": "images/moenia18.png",
         "alt": "Screenshot18"
     },    {
-        "src": "./portfolio/images/moenia19.png",
+        "src": "images/moenia19.png",
         "alt": "Screenshot19"
     },    {
-        "src": "./portfolio/images/moenia20.png",
+        "src": "images/moenia20.png",
         "alt": "Screenshot20"
     },    {
-        "src": "./portfolio/images/moenia21.png",
+        "src": "images/moenia21.png",
         "alt": "Screenshot21"
     },    {
-        "src": "./portfolio/images/moenia22.png",
+        "src": "images/moenia22.png",
         "alt": "Screenshot22"
     }
     ],
     "slidessynapsis": [
         {
-            "src": "./portfolio/images/synapsis1.png",
+            "src": "images/synapsis1.png",
             "alt": "Screenshot1"
         },
         {
-            "src": "./portfolio/images/synapsis2.png",
+            "src": "images/synapsis2.png",
             "alt": "Screenshot2"
         },
         {
-            "src": "./portfolio/images/synapsis3.png",
+            "src": "images/synapsis3.png",
             "alt": "Screenshot3"
         },
         {
-            "src": "./portfolio/images/synapsis4.png",
+            "src": "images/synapsis4.png",
             "alt": "Screenshot4"
         },
         {
-            "src": "./portfolio/images/synapsis5.png",
+            "src": "images/synapsis5.png",
             "alt": "Screenshot5"
         },
         {
-            "src": "./portfolio/images/synapsis6.png",
+            "src": "images/synapsis6.png",
             "alt": "Screenshot6"
         },
         {
-            "src": "./portfolio/images/synapsis7.png",
+            "src": "images/synapsis7.png",
             "alt": "Screenshot7"
         },
         {
-            "src": "./portfolio/images/synapsis8.png",
+            "src": "images/synapsis8.png",
             "alt": "Screenshot8"       
         },  
         {
-            "src": "./portfolio/images/synapsis9.png",
+            "src": "images/synapsis9.png",
             "alt": "Screenshot9"       
         },
         {
-            "src": "./portfolio/images/synapsis10.png",
+            "src": "images/synapsis10.png",
             "alt": "Screenshot10"       
         },
         {
-            "src": "./portfolio/images/synapsis11.png",
+            "src": "images/synapsis11.png",
             "alt": "Screenshot11"       
         },
         {
-            "src": "./portfolio/images/synapsis12.png",
+            "src": "images/synapsis12.png",
             "alt": "Screenshot12"       
         },
         {
-            "src": "./portfolio/images/synapsis13.png",
+            "src": "images/synapsis13.png",
             "alt": "Screenshot13"       
         },
         {
-            "src": "./portfolio/images/synapsis14.png",
+            "src": "images/synapsis14.png",
             "alt": "Screenshot14"       
         },
         {
-            "src": "./portfolio/images/synapsis15.png",
+            "src": "images/synapsis15.png",
             "alt": "Screenshot15"       
         },
         {
-            "src": "./portfolio/images/synapsis16.png",
+            "src": "images/synapsis16.png",
             "alt": "Screenshot16"       
         },
         {
-            "src": "./portfolio/images/synapsis17.png",
+            "src": "images/synapsis17.png",
             "alt": "Screenshot17"       
         },
         {
-            "src": "./portfolio/images/synapsis18.png",
+            "src": "images/synapsis18.png",
             "alt": "Screenshot18"       
         },
         {
-            "src": "./portfolio/images/synapsis19.png",
+            "src": "images/synapsis19.png",
             "alt": "Screenshot19"       
         },
         {
-            "src": "./portfolio/images/synapsis20.png",
+            "src": "images/synapsis20.png",
             "alt": "Screenshot20"       
         },
         {
-            "src": "./portfolio/images/synapsis21.png",
+            "src": "images/synapsis21.png",
             "alt": "Screenshot21"       
         },
         {
-            "src": "./portfolio/images/synapsis22.png",
+            "src": "images/synapsis22.png",
             "alt": "Screenshot22"       
         },
         {
-            "src": "./portfolio/images/synapsis23.png",
+            "src": "images/synapsis23.png",
             "alt": "Screenshot23"       
         }  
     ]

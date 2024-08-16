@@ -1,4 +1,8 @@
 import './App.css';
+import './components/ProjectsPage.css'
+import './components/ResumePage.css'
+import './components/ContactsPage.css'
+import './components/AboutPage.css'
 import { Route, Routes, HashRouter } from "react-router-dom";
 import Home from './components/Home';
 import AboutPage from './components/AboutPage';
