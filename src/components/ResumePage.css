@@ -138,6 +138,9 @@
 	.resume-page {
 		display: flex;
 		flex-direction: column;
+		top: 0;
+		width: 100%;
+		height: 100%;
 	}
 
 	.languages-and-experience {
@@ -154,6 +157,9 @@
 	.resume-page {
 		display: flex;
 		flex-direction: column;
+		top: 0;
+		width: 100%;
+		height: 100%;
 	}
 
 	.languages-and-experience {
@@ -170,6 +176,9 @@
 .resume-page {
 	display: flex;
 	flex-direction: column;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .education-and-skills {
@@ -225,6 +234,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+	
+	.resume-page {
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
 	.languages-and-experience {
 		margin-top: 130px;
 		grid-template-columns: 50% 50%;
