@@ -105,6 +105,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
 				</p>
 				</div>
 				<div className="skill">
@@ -114,6 +115,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
 				</p>
 				</div>
 				<div className="skill">
@@ -123,6 +125,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
 				</p>
 				</div>
 				<div className="skill">
@@ -133,6 +136,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />					
 					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
 				</p>
 				</div>
 				<div className="skill">
@@ -204,6 +208,7 @@ const closeWindow = () => {
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
+					<VscCircleLargeFilled className="symbol-lang1"/>  
 				</p>
 				</div>
 				<div className="lang">
@@ -213,6 +218,7 @@ const closeWindow = () => {
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
+					<VscCircleLargeFilled className="symbol-lang1"/>  
 				</p>
 				</div>
 				<div className="lang">
@@ -221,6 +227,8 @@ const closeWindow = () => {
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
 					<VscCircleLargeFilled className="symbol-lang"/>
+					<VscCircleLargeFilled className="symbol-lang1"/>  
+					<VscCircleLargeFilled className="symbol-lang1"/>  
 				</p>
 				</div>
 			</div>

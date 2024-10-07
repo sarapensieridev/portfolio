@@ -127,8 +127,27 @@
 	color: #da4167;
 }
 
+.symbol1 {
+	color: transparent;
+    border: 1px solid #da4167;
+    width: 0.85em;
+    height: 0.8em;
+    margin-bottom: 0.0677em;
+    margin-left: 0.1em;
+}
+
 .symbol-lang {
 	color: #f4d35e;
+}
+
+.symbol-lang1 {
+	color: transparent;
+    border: 1px solid #f4d35e;
+    width: 0.85em;
+    height: 0.8em;
+    margin-bottom: 0.0677em;
+    margin-left: 0.1em;
+	border-radius: 50%;
 }
 
 /*RESUME PAGE RESPONSIVE*/
