@@ -166,6 +166,10 @@ const closeWindow = () => {
 				<div className="experience-div">
 				<h1 className="resume-h1">Experiences</h1>
 				<div className="argument">
+					<h3 className="resume-h3">Language Data Annotator</h3>
+					<p className="resume-p">Octuber 2023-Now</p>
+				</div>
+				<div className="argument">
 					<h3 className="resume-h3">Early Childhood Educator</h3>
 					<p className="resume-p">2019-2023</p>
 				</div>

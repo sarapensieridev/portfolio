@@ -28,7 +28,7 @@ const closeWindow = () => {
 				 		<p className="about-p">Throughout these years, I experienced a lot as a person and actually, I changed a lot and I understood that I needed a change in my professional career towards a job that would allow me to open my mind to other professional fields and to have a remote position.</p>
 				 		<p className="about-p">So I decided to switch my career toward the tech world and I think that my professional background can help in this area, because as an educator I always experienced the need to continue learning and to prove myself with new challenges so I learned to be curious and to persist to reach my objectives.</p>
 				 		<p className="about-p">Since September 2023 I have been learning software development and nowadays I am able to work with HTML, CSS, Javascript languages and the React framework. I also take some courses about Wordpress, SEO and GIT.</p>
-				 		<p className="about-p">Obviously my journey it's just begun, but I really enjoy what I'm learning and what I'm doing, so I can't wait to be a professional.</p>
+				 		<p className="about-p">Obviously, my journey has just begun, but I really enjoy what I'm learning and what I'm doing, so I can't wait to become a professional.</p>
 					</div>
 				</div>
 			</div>	

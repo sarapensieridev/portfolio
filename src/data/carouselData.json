@@ -170,5 +170,111 @@
             "src": "images/synapsis23.png",
             "alt": "Screenshot23"       
         }  
+    ],
+    "slidesplantastic": [
+        {
+            "src": "images/plantastic1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/plantastic2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/plantastic3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/plantastic4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/plantastic6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/plantastic7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/plantastic8.png",
+            "alt": "Screenshot8"       
+        },  
+        {
+            "src": "images/plantastic9.png",
+            "alt": "Screenshot9"       
+        },
+        {
+            "src": "images/plantastic10.png",
+            "alt": "Screenshot10"       
+        },
+        {
+            "src": "images/plantastic11.png",
+            "alt": "Screenshot11"       
+        },
+        {
+            "src": "images/plantastic12.png",
+            "alt": "Screenshot12"       
+        },
+        {
+            "src": "images/plantastic13.png",
+            "alt": "Screenshot13"       
+        },
+        {
+            "src": "images/plantastic14.png",
+            "alt": "Screenshot14"       
+        },
+        {
+            "src": "images/plantastic15.png",
+            "alt": "Screenshot15"       
+        },
+        {
+            "src": "images/plantastic16.png",
+            "alt": "Screenshot16"       
+        },
+        {
+            "src": "images/plantastic17.png",
+            "alt": "Screenshot17"       
+        },
+        {
+            "src": "images/plantastic18.png",
+            "alt": "Screenshot18"       
+        },
+        {
+            "src": "images/plantastic19.png",
+            "alt": "Screenshot19"       
+        },
+        {
+            "src": "images/plantastic20.png",
+            "alt": "Screenshot20"       
+        },
+        {
+            "src": "images/plantastic21.png",
+            "alt": "Screenshot21"       
+        },
+        {
+            "src": "images/plantastic22.png",
+            "alt": "Screenshot22"       
+        },
+        {
+            "src": "images/plantastic23.png",
+            "alt": "Screenshot23"       
+        },
+        {
+            "src": "images/plantastic24.png",
+            "alt": "Screenshot24"       
+        },
+        {
+            "src": "images/plantastic25.png",
+            "alt": "Screenshot25"       
+        },
+        {
+            "src": "images/plantastic26.png",
+            "alt": "Screenshot26"       
+        },
+        {
+            "src": "images/plantastic27.png",
+            "alt": "Screenshot27"       
+        }       
     ]
 }

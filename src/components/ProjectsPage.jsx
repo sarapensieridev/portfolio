@@ -7,6 +7,7 @@ import { CarouselSynapsis } from './CarouselSynapsis'
 
 const {slides} = carouselData;
 const {slidessynapsis} = carouselData;
+const {slidesplantastic} = carouselData;
 
 const ProjectsPage = () => {
 
@@ -30,7 +31,7 @@ const ProjectsPage = () => {
 					</div>
 				</div>
 				<div className='project-pres'>
-					<h2 className='project-title'>Synapsis ecommerce</h2>
+					<h2 className='project-title'>Synapsis Wordpress ecommerce</h2>
 					<div className='carousel-container'>
 						<CarouselSynapsis data= {slidessynapsis} />
 					</div>
@@ -38,6 +39,16 @@ const ProjectsPage = () => {
 						<p className='project-p'>Synapsis is an ecommerce platform showcasing glass and macrame pieces. When designing the platform, I prioritized a clean, elegant, and user-friendly interface. This not only enhances the customer experience but also ensures the platform reflects the sophistication of the products themselves.</p>
 						<p className='project-p'>By opting for a WordPress-based design, I empowered the client with the autonomy to independently update and monitor product stock levels and sales performance. This translates to greater flexibility and control for the client, allowing them to manage their business efficiently without relying on external technical support.
 						</p>
+					</div>
+				</div>
+				<div className='project-pres'>
+					<h2 className='project-title'>Plantastic ecommerce</h2>
+					<div className='carousel-container'>
+						<CarouselSynapsis data= {slidesplantastic} />
+					</div>
+					<div className='project-paragraph'>
+						<p className='project-p'>Plantastic is a MERN stack E-commerce app built from scratch, designed to allow users to browse and purchase various types of plants. The app utilizes React for the frontend, Node.js for the backend, MongoDB as the database and styling with Styled Components.</p>
+						<p className='project-p'>Key features include secure user authentication via JWT, global state management with Redux, and payment integration with Stripe. The frontend is built using React, following the component-based architecture. Redux is used to manage the state across the app, including the user's cart, authentication status, and the payment process. The backend is built with Node.js, providing a RESTful API to handle requests from the frontend. This is a beginner-friendly full-stack shopping app that covers essential eCommerce concepts like product management, cart functionality, and order processing.</p>
 					</div>
 				</div>
 			</div>
