@@ -115,7 +115,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
+					<ImStop2 className="symbol" />
 				</p>
 				</div>
 				<div className="skill">
@@ -125,7 +125,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
+					<ImStop2 className="symbol" />
 				</p>
 				</div>
 				<div className="skill">
@@ -136,7 +136,7 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 					<ImStop2 className="symbol" />					
 					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
+					<ImStop2 className="symbol" />
 				</p>
 				</div>
 				<div className="skill">
@@ -159,6 +159,16 @@ const closeWindow = () => {
 					<ImStop2 className="symbol" />
 				</p>
 				</div>
+				<div className="skill">
+				<h3 className="resume-h3">Angular</h3>
+				<p className="resume-p">
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
+					<ImStop2 className="symbol1" />
+				</p>
+				</div>
 				</div>
 			</div>
 			</div>
@@ -171,7 +181,7 @@ const closeWindow = () => {
 				</div>
 				<div className="argument">
 					<h3 className="resume-h3">Early Childhood Educator</h3>
-					<p className="resume-p">2019-2023</p>
+					<p className="resume-p">2017-2023</p>
 				</div>
 				<div className="argument">
 					<h3 className="resume-h3">Language Teacher</h3>

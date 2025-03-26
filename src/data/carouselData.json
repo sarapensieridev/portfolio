@@ -1,81 +1,49 @@
-
 {
     "slides": [
-    {
-        "src": "images/moenia1.png",
-        "alt": "Screenshot1"
-    },
-    {
-        "src": "images/moenia2.png",
-        "alt": "Screenshot2"
-    },
-    {
-        "src": "images/moenia3.png",
-        "alt": "Screenshot3"
-    },
-    {
-        "src": "images/moenia4.png",
-        "alt": "Screenshot4"
-    },
-    {
-        "src": "images/moenia5.png",
-        "alt": "Screenshot5"
-    },
-    {
-        "src": "images/moenia6.png",
-        "alt": "Screenshot6"
-    },
-    {
-        "src": "images/moenia7.png",
-        "alt": "Screenshot7"
-    },
-    {
-        "src": "images/moenia9.png",
-        "alt": "Screenshot9"
-    },
-    {
-        "src": "images/moenia10.png",
-        "alt": "Screenshot10"
-    },
-    {
-        "src": "images/moenia11.png",
-        "alt": "Screenshot11"
-    },
-    {
-        "src": "images/moenia12.png",
-        "alt": "Screenshot12"
-    },    {
-        "src": "images/moenia13.png",
-        "alt": "Screenshot13"
-    },    {
-        "src": "images/moenia14.png",
-        "alt": "Screenshot14"
-    },    {
-        "src": "images/moenia15.png",
-        "alt": "Screenshot15"
-    },
-    {
-        "src": "images/moenia16.png",
-        "alt": "Screenshot16"
-    },    {
-        "src": "images/moenia17.png",
-        "alt": "Screenshot17"
-    },    {
-        "src": "images/moenia18.png",
-        "alt": "Screenshot18"
-    },    {
-        "src": "images/moenia19.png",
-        "alt": "Screenshot19"
-    },    {
-        "src": "images/moenia20.png",
-        "alt": "Screenshot20"
-    },    {
-        "src": "images/moenia21.png",
-        "alt": "Screenshot21"
-    },    {
-        "src": "images/moenia22.png",
-        "alt": "Screenshot22"
-    }
+        {
+            "src": "images/moenia1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/moenia2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/moenia3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/moenia4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/moenia5.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/moenia6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/moenia7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/moenia11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/moenia12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/moenia13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/moenia14.png",
+            "alt": "Screenshot14"
+        }
     ],
     "slidessynapsis": [
         {
@@ -108,68 +76,68 @@
         },
         {
             "src": "images/synapsis8.png",
-            "alt": "Screenshot8"       
-        },  
+            "alt": "Screenshot8"
+        },
         {
             "src": "images/synapsis9.png",
-            "alt": "Screenshot9"       
+            "alt": "Screenshot9"
         },
         {
             "src": "images/synapsis10.png",
-            "alt": "Screenshot10"       
+            "alt": "Screenshot10"
         },
         {
             "src": "images/synapsis11.png",
-            "alt": "Screenshot11"       
+            "alt": "Screenshot11"
         },
         {
             "src": "images/synapsis12.png",
-            "alt": "Screenshot12"       
+            "alt": "Screenshot12"
         },
         {
             "src": "images/synapsis13.png",
-            "alt": "Screenshot13"       
+            "alt": "Screenshot13"
         },
         {
             "src": "images/synapsis14.png",
-            "alt": "Screenshot14"       
+            "alt": "Screenshot14"
         },
         {
             "src": "images/synapsis15.png",
-            "alt": "Screenshot15"       
+            "alt": "Screenshot15"
         },
         {
             "src": "images/synapsis16.png",
-            "alt": "Screenshot16"       
+            "alt": "Screenshot16"
         },
         {
             "src": "images/synapsis17.png",
-            "alt": "Screenshot17"       
+            "alt": "Screenshot17"
         },
         {
             "src": "images/synapsis18.png",
-            "alt": "Screenshot18"       
+            "alt": "Screenshot18"
         },
         {
             "src": "images/synapsis19.png",
-            "alt": "Screenshot19"       
+            "alt": "Screenshot19"
         },
         {
             "src": "images/synapsis20.png",
-            "alt": "Screenshot20"       
+            "alt": "Screenshot20"
         },
         {
             "src": "images/synapsis21.png",
-            "alt": "Screenshot21"       
+            "alt": "Screenshot21"
         },
         {
             "src": "images/synapsis22.png",
-            "alt": "Screenshot22"       
+            "alt": "Screenshot22"
         },
         {
             "src": "images/synapsis23.png",
-            "alt": "Screenshot23"       
-        }  
+            "alt": "Screenshot23"
+        }
     ],
     "slidesplantastic": [
         {
@@ -198,83 +166,599 @@
         },
         {
             "src": "images/plantastic8.png",
-            "alt": "Screenshot8"       
-        },  
+            "alt": "Screenshot8"
+        },
         {
             "src": "images/plantastic9.png",
-            "alt": "Screenshot9"       
+            "alt": "Screenshot9"
         },
         {
             "src": "images/plantastic10.png",
-            "alt": "Screenshot10"       
-        },
-        {
-            "src": "images/plantastic11.png",
-            "alt": "Screenshot11"       
+            "alt": "Screenshot10"
         },
         {
             "src": "images/plantastic12.png",
-            "alt": "Screenshot12"       
+            "alt": "Screenshot12"
         },
         {
             "src": "images/plantastic13.png",
-            "alt": "Screenshot13"       
+            "alt": "Screenshot13"
         },
         {
             "src": "images/plantastic14.png",
-            "alt": "Screenshot14"       
+            "alt": "Screenshot14"
         },
         {
             "src": "images/plantastic15.png",
-            "alt": "Screenshot15"       
+            "alt": "Screenshot15"
         },
         {
             "src": "images/plantastic16.png",
-            "alt": "Screenshot16"       
+            "alt": "Screenshot16"
         },
         {
             "src": "images/plantastic17.png",
-            "alt": "Screenshot17"       
+            "alt": "Screenshot17"
         },
         {
             "src": "images/plantastic18.png",
-            "alt": "Screenshot18"       
+            "alt": "Screenshot18"
         },
         {
             "src": "images/plantastic19.png",
-            "alt": "Screenshot19"       
+            "alt": "Screenshot19"
         },
         {
             "src": "images/plantastic20.png",
-            "alt": "Screenshot20"       
+            "alt": "Screenshot20"
         },
         {
             "src": "images/plantastic21.png",
-            "alt": "Screenshot21"       
+            "alt": "Screenshot21"
         },
         {
             "src": "images/plantastic22.png",
-            "alt": "Screenshot22"       
+            "alt": "Screenshot22"
         },
         {
             "src": "images/plantastic23.png",
-            "alt": "Screenshot23"       
+            "alt": "Screenshot23"
         },
         {
             "src": "images/plantastic24.png",
-            "alt": "Screenshot24"       
+            "alt": "Screenshot24"
         },
         {
             "src": "images/plantastic25.png",
-            "alt": "Screenshot25"       
+            "alt": "Screenshot25"
         },
         {
             "src": "images/plantastic26.png",
-            "alt": "Screenshot26"       
+            "alt": "Screenshot26"
         },
         {
             "src": "images/plantastic27.png",
-            "alt": "Screenshot27"       
-        }       
+            "alt": "Screenshot27"
+        }
+    ],
+    "slidesenglishseedadmin": [
+        {
+            "src": "images/englishseed1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/englishseed2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/englishseed3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/englishseed4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/englishseed5.png",
+            "alt": "Screenshot5"
+        },
+        {
+            "src": "images/englishseed6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/englishseed7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/englishseed8.png",
+            "alt": "Screenshot9"
+        },
+        {
+            "src": "images/englishseed9.png",
+            "alt": "Screenshot10"
+        },
+        {
+            "src": "images/englishseed10.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/englishseed11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/englishseed12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/englishseed13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/englishseed14.png",
+            "alt": "Screenshot14"
+        },
+        {
+            "src": "images/englishseed15.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/englishseed16.png",
+            "alt": "Screenshot16"
+        },
+        {
+            "src": "images/englishseed17.png",
+            "alt": "Screenshot17"
+        },
+        {
+            "src": "images/englishseed18.png",
+            "alt": "Screenshot18"
+        },
+        {
+            "src": "images/englishseed19.png",
+            "alt": "Screenshot19"
+        }
+    ],
+    "nubeviajera": [
+        {
+            "src": "images/nubeviajera1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/nubeviajera2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/nubeviajera3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/nubeviajera4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/nubeviajera5.png",
+            "alt": "Screenshot5"
+        },
+        {
+            "src": "images/nubeviajera6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/nubeviajera7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/nubeviajera8.png",
+            "alt": "Screenshot9"
+        },
+        {
+            "src": "images/nubeviajera9.png",
+            "alt": "Screenshot10"
+        },
+        {
+            "src": "images/nubeviajera10.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/nubeviajera11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/nubeviajera12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/nubeviajera13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/nubeviajera14.png",
+            "alt": "Screenshot14"
+        },
+        {
+            "src": "images/nubeviajera15.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/nubeviajera16.png",
+            "alt": "Screenshot16"
+        },
+        {
+            "src": "images/nubeviajera17.png",
+            "alt": "Screenshot17"
+        },
+        {
+            "src": "images/nubeviajera18.png",
+            "alt": "Screenshot18"
+        },
+        {
+            "src": "images/nubeviajera19.png",
+            "alt": "Screenshot19"
+        },
+        {
+            "src": "images/nubeviajera20.png",
+            "alt": "Screenshot20"
+        },
+        {
+            "src": "images/nubeviajera22.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera23.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera24.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera25.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera26.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera27.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera28.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera29.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera30.png",
+            "alt": "Screenshot22"
+        },
+        {
+            "src": "images/nubeviajera31.png",
+            "alt": "Screenshot22"
+        }
+    ],
+    "unwind": [
+        {
+            "src": "images/unwind1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/unwind2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/unwind3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/unwind4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/unwind5.png",
+            "alt": "Screenshot5"
+        },
+        {
+            "src": "images/unwind6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/unwind7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/unwind8.png",
+            "alt": "Screenshot9"
+        },
+        {
+            "src": "images/unwind9.png",
+            "alt": "Screenshot10"
+        },
+        {
+            "src": "images/unwind10.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/unwind11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/unwind12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/unwind13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/unwind14.png",
+            "alt": "Screenshot14"
+        },
+        {
+            "src": "images/unwind15.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/unwind16.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/unwind17.png",
+            "alt": "Screenshot15"
+        }
+    ],
+    "linguasync": [
+        {
+            "src": "images/lingua1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/lingua2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/lingua3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/lingua4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/lingua5.png",
+            "alt": "Screenshot5"
+        },
+        {
+            "src": "images/lingua6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/lingua7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/lingua8.png",
+            "alt": "Screenshot9"
+        },
+        {
+            "src": "images/lingua9.png",
+            "alt": "Screenshot10"
+        },
+        {
+            "src": "images/lingua10.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/lingua11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/lingua12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/lingua13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/lingua14.png",
+            "alt": "Screenshot14"
+        },
+        {
+            "src": "images/lingua15.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua16.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua17.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua18.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua19.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua20.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua21.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua22.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua23.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua24.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua25.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua26.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua27.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua28.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua29.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua30.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua31.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua32.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua33.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua34.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua35.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua36.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua37.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua38.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua39.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua40.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua41.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/lingua42.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/linguaadmin1.png",
+            "alt": "Screenshot1"
+        },
+        {
+            "src": "images/linguaadmin2.png",
+            "alt": "Screenshot2"
+        },
+        {
+            "src": "images/linguaadmin3.png",
+            "alt": "Screenshot3"
+        },
+        {
+            "src": "images/linguaadmin4.png",
+            "alt": "Screenshot4"
+        },
+        {
+            "src": "images/linguaadmin5.png",
+            "alt": "Screenshot5"
+        },
+        {
+            "src": "images/linguaadmin6.png",
+            "alt": "Screenshot6"
+        },
+        {
+            "src": "images/linguaadmin7.png",
+            "alt": "Screenshot7"
+        },
+        {
+            "src": "images/linguaadmin8.png",
+            "alt": "Screenshot8"
+        },
+        {
+            "src": "images/linguaadmin9.png",
+            "alt": "Screenshot9"
+        },
+        {
+            "src": "images/linguaadmin10.png",
+            "alt": "Screenshot10"
+        },
+        {
+            "src": "images/linguaadmin11.png",
+            "alt": "Screenshot11"
+        },
+        {
+            "src": "images/linguaadmin12.png",
+            "alt": "Screenshot12"
+        },
+        {
+            "src": "images/linguaadmin13.png",
+            "alt": "Screenshot13"
+        },
+        {
+            "src": "images/linguaadmin14.png",
+            "alt": "Screenshot14"
+        },
+        {
+            "src": "images/linguaadmin15.png",
+            "alt": "Screenshot15"
+        },
+        {
+            "src": "images/linguaadmin16.png",
+            "alt": "Screenshot16"
+        },
+        {
+            "src": "images/linguaadmin17.png",
+            "alt": "Screenshot17"
+        },
+        {
+            "src": "images/linguaadmin18.png",
+            "alt": "Screenshot18"
+        },
+        {
+            "src": "images/linguaadmin19.png",
+            "alt": "Screenshot19"
+        },
+        {
+            "src": "images/linguaadmin20.png",
+            "alt": "Screenshot20"
+        }
     ]
 }
