@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Carousel.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export const CarouselMoenia = ({data}) => {
+export const Carousel = ({data}) => {
     
     const [slide, setSlide] = useState(0);
 

@@ -75,6 +75,18 @@
 	text-align: justify;
 }
 
+.visit-site {
+	font-size: 20px;
+	text-align: justify;
+}
+
+.web-link {
+	text-decoration: none;
+	color:#da4167;
+	cursor: pointer;
+	font-weight: bold;
+}
+
 
 /*PROJECTS PAGE RESPONSIVE*/
 
