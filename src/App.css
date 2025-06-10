@@ -241,7 +241,7 @@ body:has(#resume-main:hover) #logo ~ #contacts-main {
 
 /*APP PAGE RESPONSIVE*/
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 2030px) {
 .logo-font{
 	font-size: 44px;
 }
