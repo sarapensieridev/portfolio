@@ -119,6 +119,16 @@ const closeWindow = () => {
 				</p>
 				</div>
 				<div className="skill">
+				<h3 className="resume-h3">React Native</h3>
+				<p className="resume-p">					
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol" />
+					<ImStop2 className="symbol1" />
+				</p>
+				</div>
+				<div className="skill">
 				<h3 className="resume-h3">Javascript</h3>
 				<p className="resume-p">
 					<ImStop2 className="symbol" />
@@ -176,8 +186,12 @@ const closeWindow = () => {
 				<div className="experience-div">
 				<h1 className="resume-h1">Experiences</h1>
 				<div className="argument">
+					<h3 className="resume-h3">Front-end Developer</h3>
+					<p className="resume-p">April 2025-Now</p>
+				</div>
+				<div className="argument">
 					<h3 className="resume-h3">Language Data Annotator</h3>
-					<p className="resume-p">Octuber 2023-Now</p>
+					<p className="resume-p">Octuber 2025-April 2025</p>
 				</div>
 				<div className="argument">
 					<h3 className="resume-h3">Early Childhood Educator</h3>
