@@ -11,6 +11,7 @@ const { slidesenglishseedadmin } = carouselData;
 const { nubeviajera } = carouselData;
 const { unwind } = carouselData;
 const { linguasync } = carouselData;
+const { camperizzati } = carouselData;
 
 const ProjectsPage = () => {
 
@@ -93,6 +94,20 @@ const ProjectsPage = () => {
 						<div className='project-paragraph'>
 							<p className='project-p'>LinguaSync is a language learning platform that empowers users to connect with a network of language teachers. Users can browse a wide selection of teachers, filtering by language and viewing detailed profiles. Once registered, users can book appointments, manage their schedules, and securely pay for sessions through our integrated <b style={{ color: "#da4167" }}>Stripe</b> payment system.</p>
 							<p className='project-p'>The frontend was constructed with <b style={{ color: "#da4167" }}>React.js</b>. <b style={{ color: "#da4167" }}>React Router</b> facilitates seamless navigation, and a modular architecture promotes code reusability. <b style={{ color: "#da4167" }}>Tailwind CSS</b> was selected to enable rapid development and consistent styling. The backend is built using <b style={{ color: "#da4167" }}>Node.js</b> and the <b style={{ color: "#da4167" }}>Express.js</b> framework. RESTful APIs enable efficient data exchange between the frontend and backend, adhering to API design best practices. <b style={{ color: "#da4167" }}>Axios</b> is employed for asynchronous API fetching in the React.js frontend. Data persistence is managed using <b style={{ color: "#da4167" }}>MongoDB</b>. The endpoints were tested using <b style={{ color: "#da4167" }}>Postman</b>. Authentication is handled via a secure, token-based system, supporting multi-level access control for users, teachers, and administrators. <b style={{ color: "#da4167" }}>Stripe</b> integration leverages its API for secure and reliable online payment processing.</p>
+						</div>
+					</div>
+					<div className='project-pres'>
+						<h2 className='project-title'>Camperizzati Angular App</h2>
+						<div className='carousel-container'>
+							<Carousel data={camperizzati} />
+						</div>
+						<div className='project-paragraph'>
+							<p className='visit-site'>Feel free to visit the web: <a href='https://camperizzati.onrender.com/' target='_blank' rel='noopener noreferrer' className='web-link'>Camperizzati</a></p>
+							<br />
+							<p className='project-p'>Camperizzati is a web application designed to connect individuals looking to customize their vans into campers with skilled artisans across Italy who can realize their projects.</p>
+							<p className='project-p'>The app's frontend was built with <b style={{ color: "#da4167" }}>Angular</b>. It uses Angular's components and routing to create an organized and easy-to-navigate interface.
+							Data is managed through Angular services and state management utilizing <b style={{ color: "#da4167" }}>RxJS observables</b> for asynchronous operations. While the current setup uses a local <b style={{ color: "#da4167" }}>JSON Server</b> for development, its service-oriented design allows for easy integration with a full-fledged backend.
+							The app's style is achieved with <b style={{ color: "#da4167" }}>plain CSS</b> and it is designed to be fully responsive, adapting its layout and presentation across various devices to provide an optimal user experience.</p>
 						</div>
 					</div>
 				</div>
