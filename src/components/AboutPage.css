@@ -50,9 +50,7 @@
 	display: grid;
 	grid-template-columns: 40% 60%;
 	grid-gap: 30px;
-	margin-left: 250px;
-	margin-right: 250px;
-	margin-top: 30px;
+	margin: 30px 250px;
 }
 
 .title {
