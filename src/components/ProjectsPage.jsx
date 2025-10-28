@@ -102,7 +102,7 @@ const ProjectsPage = () => {
 							<Carousel data={camperizzati} />
 						</div>
 						<div className='project-paragraph'>
-							<p className='visit-site'>Feel free to visit the web: <a href='https://camperizzati.onrender.com/' target='_blank' rel='noopener noreferrer' className='web-link'>Camperizzati</a></p>
+							<p className='visit-site'>Feel free to visit the web: <a href='https://camperizzati.net/' target='_blank' rel='noopener noreferrer' className='web-link'>Camperizzati</a></p>
 							<br />
 							<p className='project-p'>Camperizzati is a web application designed to connect individuals looking to customize their vans into campers with skilled artisans across Italy who can realize their projects.</p>
 							<p className='project-p'>The app's frontend was built with <b style={{ color: "#da4167" }}>Angular</b>. It uses Angular's components and routing to create an organized and easy-to-navigate interface.
