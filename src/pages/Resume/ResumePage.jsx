@@ -1,268 +1,309 @@
-import close from "../../images/close.png"
-import { useNavigate } from "react-router-dom";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { ImStop2 } from "react-icons/im";
+import styled, { keyframes, css } from "styled-components";
+import CloseButton from "../../components/CloseButton";
+import {
+  academicData,
+  educationData,
+  experienceData,
+  languagesData,
+  skillsData,
+} from "../../data/resumeData";
+import CourseEntry from "../../components/CourseEntry";
+import SkillRating from "../../components/SkillRating";
+import ExperienceEntry from "../../components/ExperienceEntry";
 
+const moveFromLeft = keyframes`
+	from { -webkit-transform: translateX(-100%); }
+`;
+
+const ResumePageDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #ebebd3;
+  position: absolute;
+  border: solid 4px #083d77;
+  display: grid;
+  grid-template-rows: 65% 35%;
+  font-family: "PT Sans", sans-serif;
+  -webkit-animation: ${moveFromLeft} 0.6s ease both;
+  animation: ${moveFromLeft} 0.6s ease both;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: 600px) and (min-height: 300px) {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+const EducationAndSkills = styled.div`
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 55px;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 170px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media only screen and (min-width: 600px) and (min-height: 300px) {
+    flex: 1;
+  }
+`;
+
+const EducationDiv = styled.div`
+  padding: 15px;
+  margin-left: 50px;
+  border-right: solid 4px #083d77;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: none;
+  }
+`;
+
+const ResumeH1 = styled.h1`
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #083d77;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 5px;
+    font-size: 24px;
+    border-bottom: 4px solid #083d77;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+`;
+
+const ArgumentDiv = styled.div`
+  margin-bottom: 25px;
+`;
+const Skills = styled.div`
+  padding: 15px;
+  margin-left: 30px;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+  }
+`;
+
+const SkillsGrid = styled.div`
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 40% 40% 40%;
+  grid-gap: 15px;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33% 33% 33%;
+    grid-gap: 5px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30% 30%;
+    grid-gap: 5px;
+  }
+`;
+
+const LanguagesAndExperience = styled.div`
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  /* RESUME PAGE RESPONSIVE - max-width: 600px (Mobile) */
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 50% 50%;
+    margin-top: -30px;
+  }
+
+  @media only screen and (min-width: 600px) and (min-height: 300px) {
+    flex: 1;
+  }
+`;
+
+const ExperienceDiv = styled.div`
+  padding: 15px;
+  margin-left: 50px;
+  border-right: solid 4px #083d77;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-right: none;
+  }
+`;
+
+const LanguagesDiv = styled.div`
+  padding: 15px;
+  margin-left: 30px;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+`;
+
+const LanguagesGrid = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30%;
+  grid-gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+const IconBase = css`
+    /* Common dimensions/margins from your original CSS */
+    width: 0.85em;
+    height: 0.8em;
+    margin-bottom: 0.0677em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    display: inline-block; /* Helps with layout */
+`;
+
+const StyledSkillFilled = styled(ImStop2)`
+    ${IconBase}
+    color: #da4167;
+`;
+
+const StyledSkillEmpty = styled(ImStop2)`
+    ${IconBase}
+    color: transparent;
+    border: 1px solid #da4167;
+    box-sizing: border-box; /* Ensures border doesn't increase size */
+`;
+
+const StyledLangFilled = styled(VscCircleLargeFilled)`
+    ${IconBase}
+    color: #f4d35e;
+`;
+
+const StyledLangEmpty = styled(VscCircleLargeFilled)`
+    ${IconBase}
+    color: transparent;
+    border: 1px solid #f4d35e;
+    border-radius: 50%;
+    box-sizing: border-box; /* Ensures border doesn't increase size */
+`;
 
 
 const ResumePage = () => {
-
-const navigate = useNavigate();
-const closeWindow = () => {
-	navigate(-1);
-}
-
-
-	return (
-		<div className="resume-page">
-			<button onClick={closeWindow} className="close-button"><img src={close} className="close" alt="close-tag"></img></button>
-			<div className="education-and-skills">
-			<div className="education-div">
-				<h1 className="resume-h1">Education</h1>
-				<div className="courses">
-				<div className="argument-div">
-					<div className="course">
-					<h3 className="resume-h3">Introduction to SEO</h3>
-					<p className="resume-p">Barcelona Activa, May 2024</p>
-					</div>
-					<div className="course">
-					<h3 className="resume-h3">Wordpress: create a web from a local host</h3>
-					<p className="resume-p">Barcelona Activa, May 2024</p>
-					</div>
-					<div className="course">
-					<h3 className="resume-h3">Code repositories: GIT and Github</h3>
-					<p className="resume-p">Barcelona Activa, May 2024</p>
-					</div>
-					<div className="course">
-					<h3 className="resume-h3">Frontend Development Libraries</h3>
-					<p className="resume-p">freeCodeCamp, May 2024</p>
-					</div>
-					<div className="course">
-					<h3 className="resume-h3">JavaScript Algorithms and Data Structures Certification</h3>
-					<p className="resume-p">freeCodeCamp, February 2024</p>
-					</div>
-					<div className="course">
-					<h3 className="resume-h3">Responsive Web Design Certification</h3>
-					<p className="resume-p">freeCodeCamp, November 2023</p>
-					</div>
-				</div>
-				</div>
-				<div className="argument-div-2">
-					<h3 className="resume-h3">Master's Degree in Modern, comparative and postcolonial literatures</h3>
-					<p className="resume-p">University of Bologna, 2016</p>
-					<h3 className="resume-h3">Bachelor's Degree in Modern Foreign Languages and Literatures</h3>
-					<p className="resume-p">University of Bologna, 2012</p>
-				</div>
-			</div>
-			<div className="skills">
-				<h1 className="resume-h1">Personal and professional skills</h1>
-				<div className="skills-grid">
-				<div className="skill">
-				<h3 className="resume-h3">Teamwork</h3>
-					<p className="resume-p">
-					<ImStop2 className="symbol"/>
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Organization skills</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>	
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Public Relations</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Work under pressure</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2  className="symbol"/>
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Public Speaking</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">React</h3>
-				<p className="resume-p">					
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">React Native</h3>
-				<p className="resume-p">					
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Javascript</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">CSS</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />					
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">HTML</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Microsoft Office</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-				</p>
-				</div>
-				<div className="skill">
-				<h3 className="resume-h3">Angular</h3>
-				<p className="resume-p">
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol" />
-					<ImStop2 className="symbol1" />
-					<ImStop2 className="symbol1" />
-				</p>
-				</div>
-				</div>
-			</div>
-			</div>
-			<div className="languages-and-experience">
-				<div className="experience-div">
-				<h1 className="resume-h1">Experiences</h1>
-				<div className="argument">
-					<h3 className="resume-h3">Front-end Developer</h3>
-					<p className="resume-p">April 2025-Now</p>
-				</div>
-				<div className="argument">
-					<h3 className="resume-h3">Language Data Annotator</h3>
-					<p className="resume-p">Octuber 2025-April 2025</p>
-				</div>
-				<div className="argument">
-					<h3 className="resume-h3">Early Childhood Educator</h3>
-					<p className="resume-p">2017-2023</p>
-				</div>
-				<div className="argument">
-					<h3 className="resume-h3">Language Teacher</h3>
-					<p className="resume-p">2015-2019</p>
-				</div>
-				<div className="argument">
-					<h3 className="resume-h3">Database Assistant</h3>
-					<p className="resume-p">2012-2013</p>
-				</div>
-			</div>
-			<div className="languages-div">
-				<h1 className="resume-h1">Languages</h1>
-				<div className="languages-grid">
-				<div className="lang">
-				<h3 className="resume-h3">Italian</h3>
-				<p className="resume-p">   
-					<VscCircleLargeFilled className="symbol-lang" />
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>  
-				</p>
-				</div>
-				<div className="lang">
-				<h3 className="resume-h3">Spanish</h3>
-				<p className="resume-p">
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-				</p>
-				</div>
-				<div className="lang">
-				<h3 className="resume-h3">English</h3>
-				<p className="resume-p">
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang1"/>  
-				</p>
-				</div>
-				<div className="lang">
-				<h3 className="resume-h3">Portuguese</h3>
-				<p className="resume-p">
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang1"/>  
-				</p>
-				</div>
-				<div className="lang">
-				<h3 className="resume-h3">Catalan</h3>
-				<p className="resume-p">
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang"/>
-					<VscCircleLargeFilled className="symbol-lang1"/>  
-					<VscCircleLargeFilled className="symbol-lang1"/>  
-				</p>
-				</div>
-			</div>
-			</div>
-			</div>
-		</div>
-	)
-}
+  return (
+    <ResumePageDiv>
+      <CloseButton />
+      <EducationAndSkills>
+        <EducationDiv>
+          <ResumeH1>Education</ResumeH1>
+          <ArgumentDiv>
+            {educationData.map((course, index) => {
+				return(
+              <CourseEntry
+                key={index}
+                title={course.title}
+                institution={course.institution}
+                date={course.date}
+              />
+				)
+            })}
+          </ArgumentDiv>
+          <ArgumentDiv>
+            {academicData.map((degree, index) => {
+			return(
+              <CourseEntry
+                key={index}
+                title={degree.title}
+                date={degree.date}
+              />
+			)
+            })}
+          </ArgumentDiv>
+        </EducationDiv>
+        <Skills>
+          <ResumeH1>Personal and professional skills</ResumeH1>
+          <SkillsGrid>
+            {skillsData.map((skill, index) => {
+			return(
+              <SkillRating
+                key={index}
+                name={skill.name}
+                rating={skill.rating}
+                FilledIcon={StyledSkillFilled}
+                EmptyIcon={StyledSkillEmpty}
+              />
+			)
+            })}
+          </SkillsGrid>
+        </Skills>
+      </EducationAndSkills>
+      <LanguagesAndExperience>
+        <ExperienceDiv>
+          <ResumeH1>Experiences</ResumeH1>
+          {experienceData.map((job, index) => {
+			return(
+            <ExperienceEntry key={index} title={job.title} date={job.date} />
+			)
+          })}
+        </ExperienceDiv>
+        <LanguagesDiv>
+          <ResumeH1>Languages</ResumeH1>
+          <LanguagesGrid>
+            {languagesData.map((language, index) => {
+			return(
+              <SkillRating
+                key={index}
+                name={language.name}
+                rating={language.rating}
+                FilledIcon={StyledLangFilled}
+                EmptyIcon={StyledLangEmpty}
+              />
+			)
+            })}
+          </LanguagesGrid>
+        </LanguagesDiv>
+      </LanguagesAndExperience>
+    </ResumePageDiv>
+  );
+};
 
 export default ResumePage;
