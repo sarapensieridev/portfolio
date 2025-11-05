@@ -1,14 +1,14 @@
 import './App.css';
-import './components/ProjectsPage.css'
-import './components/ResumePage.css'
-import './components/ContactsPage.css'
-import './components/AboutPage.css'
+import './pages/Projects/ProjectsPage.css'
+import './pages/Resume/ResumePage.css'
+import './pages/Contacts/ContactsPage.css'
+import './pages/About/AboutPage.css'
 import { Route, Routes, HashRouter } from "react-router-dom";
-import Home from './components/Home';
-import AboutPage from './components/AboutPage';
-import ResumePage from './components/ResumePage';
-import ContactsPage from './components/ContactsPage';
-import ProjectsPage from './components/ProjectsPage';
+import Home from './pages/Home';
+import ResumePage from './pages/Resume/ResumePage';
+import ContactsPage from './pages/Contacts/ContactsPage';
+import ProjectsPage from './pages/Projects/ProjectsPage';
+import AboutPage from './pages/About/AboutPage';
 
 function App() {
   return (

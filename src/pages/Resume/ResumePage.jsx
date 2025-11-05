@@ -1,5 +1,4 @@
-import React from 'react';
-import close from "./close.png"
+import close from "../../images/close.png"
 import { useNavigate } from "react-router-dom";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { ImStop2 } from "react-icons/im";

@@ -1,9 +1,8 @@
-import React from 'react';
-import Projects from './Projects';
-import About from './About';
-import Contacts from './Contacts';
-import Resume from './Resume';
+import Projects from './Projects/Projects';
+import About from './About/About';
+import Resume from './Resume/Resume';
 import Logo from './Logo';
+import Contacts from './Contacts/Contacts';
 
 
 

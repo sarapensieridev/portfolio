@@ -2,9 +2,9 @@ import React from 'react';
 import { toast } from "react-toastify";
 import { useRef } from "react";
 import copy from "copy-to-clipboard";
-import linkedin from "../images/linkedin.png"
-import github from "../images/github.png";
-import close from "./close.png"
+import linkedin from "../../images/linkedin.png"
+import github from "../../images/github.png";
+import close from "../../images/close.png"
 import { useNavigate } from "react-router-dom";
 
 
