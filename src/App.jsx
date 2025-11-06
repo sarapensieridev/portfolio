@@ -1,7 +1,4 @@
 import './App.css';
-import './pages/Projects/ProjectsPage.css'
-import './pages/Resume/ResumePage.css'
-import './pages/Contacts/ContactsPage.css'
 import { Route, Routes, HashRouter } from "react-router-dom";
 import Home from './pages/Home';
 import ResumePage from './pages/Resume/ResumePage';

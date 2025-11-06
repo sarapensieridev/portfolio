@@ -12,6 +12,9 @@ import {
 import CourseEntry from "../../components/CourseEntry";
 import SkillRating from "../../components/SkillRating";
 import ExperienceEntry from "../../components/ExperienceEntry";
+import { ResumeH1 } from "../../components/ResumeTextStyle";
+import { bgWhite, blue, pink, yellow } from "../../constants";
+
 
 const moveFromLeft = keyframes`
 	from { -webkit-transform: translateX(-100%); }
@@ -21,9 +24,9 @@ const ResumePageDiv = styled.div`
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: #ebebd3;
+  background-color: ${bgWhite};
   position: absolute;
-  border: solid 4px #083d77;
+  border: solid 2px ${blue};
   display: grid;
   grid-template-rows: 65% 35%;
   font-family: "PT Sans", sans-serif;
@@ -49,14 +52,14 @@ const ResumePageDiv = styled.div`
 `;
 const EducationAndSkills = styled.div`
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   margin-top: 55px;
 
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 170px;
+    margin-bottom: 40px;
   }
 
   @media only screen and (max-width: 768px) {
@@ -80,28 +83,12 @@ const EducationDiv = styled.div`
   }
 `;
 
-const ResumeH1 = styled.h1`
+const CoursesDiv = styled.div`
   margin-bottom: 10px;
-  font-size: 30px;
-  color: #083d77;
-
-  @media only screen and (max-width: 600px) {
-    margin-bottom: 5px;
-    font-size: 24px;
-    border-bottom: 4px solid #083d77;
-  }
-
-  @media only screen and (max-width: 768px) {
-    font-size: 25px;
-  }
-`;
-
-const ArgumentDiv = styled.div`
-  margin-bottom: 25px;
 `;
 const Skills = styled.div`
   padding: 15px;
-  margin-left: 30px;
+  margin-left: 50px;
 
   @media only screen and (max-width: 600px) {
     margin-left: 10px;
@@ -118,28 +105,27 @@ const Skills = styled.div`
 const SkillsGrid = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 40% 40% 40%;
-  grid-gap: 15px;
-  margin-top: 10px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
   justify-content: flex-start;
   align-items: center;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 33% 33% 33%;
-    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
   }
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 30% 30% 30%;
-    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
   }
 `;
 
 const LanguagesAndExperience = styled.div`
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
 
   /* RESUME PAGE RESPONSIVE - max-width: 600px (Mobile) */
   @media only screen and (max-width: 600px) {
@@ -174,7 +160,7 @@ const ExperienceDiv = styled.div`
 
 const LanguagesDiv = styled.div`
   padding: 15px;
-  margin-left: 30px;
+  margin-left: 50px;
 
   @media only screen and (max-width: 600px) {
     margin-left: 10px;
@@ -185,46 +171,58 @@ const LanguagesDiv = styled.div`
 const LanguagesGrid = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 30% 30%;
-  grid-gap: 10px;
+  grid-template-rows: auto;
+  grid-gap: 5px;
   margin-top: 10px;
   justify-content: flex-start;
   align-items: center;
 `;
 
-const IconBase = css`
-    /* Common dimensions/margins from your original CSS */
-    width: 0.85em;
-    height: 0.8em;
+const IconMargins = css`
     margin-bottom: 0.0677em;
     margin-left: 0.1em;
     margin-right: 0.1em;
-    display: inline-block; /* Helps with layout */
+    display: inline-block;
+	vertical-align: middle;
+`;
+
+const StandardIconSize = css`
+    width: 0.85em;
+    height: 0.8em;
+`;
+
+const CompensatedIconSize = css`
+    width: 0.65em;
+    height: 0.6em;
 `;
 
 const StyledSkillFilled = styled(ImStop2)`
-    ${IconBase}
-    color: #da4167;
+    ${IconMargins}
+	${StandardIconSize}
+    color: ${pink};
 `;
 
 const StyledSkillEmpty = styled(ImStop2)`
-    ${IconBase}
+    ${IconMargins}
+	${CompensatedIconSize}
     color: transparent;
-    border: 1px solid #da4167;
-    box-sizing: border-box; /* Ensures border doesn't increase size */
+    border: 1px solid ${pink};
+    box-sizing: border-box; 
 `;
 
 const StyledLangFilled = styled(VscCircleLargeFilled)`
-    ${IconBase}
-    color: #f4d35e;
+    ${IconMargins}
+	${StandardIconSize}
+    color: ${yellow};
 `;
 
 const StyledLangEmpty = styled(VscCircleLargeFilled)`
-    ${IconBase}
+    ${IconMargins}
+	${CompensatedIconSize}
     color: transparent;
-    border: 1px solid #f4d35e;
+    border: 1px solid ${yellow};
     border-radius: 50%;
-    box-sizing: border-box; /* Ensures border doesn't increase size */
+    box-sizing: border-box; 
 `;
 
 
@@ -235,7 +233,7 @@ const ResumePage = () => {
       <EducationAndSkills>
         <EducationDiv>
           <ResumeH1>Education</ResumeH1>
-          <ArgumentDiv>
+          <CoursesDiv>
             {educationData.map((course, index) => {
 				return(
               <CourseEntry
@@ -246,21 +244,22 @@ const ResumePage = () => {
               />
 				)
             })}
-          </ArgumentDiv>
-          <ArgumentDiv>
+          </CoursesDiv>
+          <CoursesDiv>
             {academicData.map((degree, index) => {
 			return(
               <CourseEntry
                 key={index}
                 title={degree.title}
+				institution={degree.institution}
                 date={degree.date}
               />
 			)
             })}
-          </ArgumentDiv>
+          </CoursesDiv>
         </EducationDiv>
         <Skills>
-          <ResumeH1>Personal and professional skills</ResumeH1>
+          <ResumeH1>Skills</ResumeH1>
           <SkillsGrid>
             {skillsData.map((skill, index) => {
 			return(

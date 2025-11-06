@@ -1,23 +1,43 @@
- 
-const SkillRating = ({ name, rating, FilledIcon, EmptyIcon}) => {
-    
-    const icons = [];
-    
-    for (let i = 1; i <= rating; i++) {
-        const IconToRender = i <= rating ? FilledIcon : EmptyIcon;
-        
-        icons.push(
-            // We render the component reference passed in props
-            <IconToRender key={`${name}-${i}`} />
-        );
-    }
+import styled from "styled-components";
+import { ResumeH3, ResumeParagraph } from "./ResumeTextStyle";
 
-    return (
-        <div className="skill"> {/* Use your styled component for the wrapper */}
-            <h3 className="resume-h3">{name}</h3>
-            <p className="resume-p">{icons}</p>
-        </div>
+const SkillDiv = styled.div`
+  padding: 5px 0px;
+
+  @media only screen and (max-width: 600px) {
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-right: 20px;
+    padding: 5px 0px;
+  }
+`;
+
+const SkillRating = ({
+  name,
+  rating,
+  maxRating = 5,
+  FilledIcon,
+  EmptyIcon,
+}) => {
+  const icons = [];
+
+  for (let i = 1; i <= maxRating; i++) {
+    const IconToRender = i <= rating ? FilledIcon : EmptyIcon;
+
+    icons.push(
+      <IconToRender key={`${name}-${i}`} />
     );
+  }
+
+  return (
+    <SkillDiv>
+      {" "}
+      <ResumeH3>{name}</ResumeH3>
+      <ResumeParagraph>{icons}</ResumeParagraph>
+    </SkillDiv>
+  );
 };
 
 export default SkillRating;

@@ -1,6 +1,7 @@
 import sara3 from "../../images/sara3.jpg";
 import styled, { keyframes } from 'styled-components';
 import CloseButton from "../../components/CloseButton";
+import { bgWhite, blue, pink, yellow } from "../../constants";
 
 const moveFromLeft = keyframes`
     from { 
@@ -10,13 +11,13 @@ const moveFromLeft = keyframes`
 
 const AboutPageDiv = styled.div`
     z-index: 9999;
-    background-color: #ebebd3;
+    background-color: ${bgWhite};
     width: 100%;
     height: 100%;
     position: absolute;
     display: grid;
     font-family: "PT Sans", sans-serif;
-    border: solid 4px #083d77;
+    border: solid 2px ${blue};
     animation: ${moveFromLeft} 0.6s ease both; /* Applying the entrance animation */
     overflow-x: hidden;
 
@@ -88,14 +89,14 @@ const Presentation = styled.div`
 `;
 
 const SaraImage = styled.div`
-    border-right: solid 4px #f4d35e;
+    border-right: solid 4px ${yellow};
     padding-right: 20px;
 
     /* Responsive: Mobile (max-width: 600px) */
     @media only screen and (max-width: 600px) {
         border-right: none;
         padding-right: 0px;
-        border-bottom: 4px solid #f4d35e;
+        border-bottom: 4px solid ${yellow};
         padding-bottom: 10px;
     }
     /* Responsive: Mid-range (769px - 1060px) */
@@ -115,7 +116,7 @@ const SaraImageTag = styled.img`
 const PresentationPWrapper = styled.div`
     /* Responsive: Mid-range (769px - 1060px) */
     @media only screen and (min-width: 769px) and (max-width: 1060px) {
-        border-top: 4px solid #f4d35e;
+        border-top: 4px solid ${yellow};
         padding-top: 20px;
     }
 `;
@@ -123,7 +124,7 @@ const PresentationPWrapper = styled.div`
 const AboutH2 = styled.h2`
     font-size: 85px;
     font-family: "Permanent Marker", sans-serif;
-    color: #083d77;
+    color: ${blue};
 
     /* Responsive: Mobile (max-width: 600px) */
     @media only screen and (max-width: 600px) {
@@ -133,7 +134,7 @@ const AboutH2 = styled.h2`
 
 const AboutH3 = styled.h3`
     font-size: 60px;
-    color: #da4167;
+    color: ${pink};
     line-height: 55px;
     margin-bottom: 15px;
 

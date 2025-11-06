@@ -1,8 +1,15 @@
+import styled from "styled-components";
+import { ResumeH3, ResumeParagraph } from "./ResumeTextStyle";
+
+const ArgumentDiv = styled.div`
+margin-bottom: 10px;
+`
+
 const ExperienceEntry = ({ title, date }) => (
-    <div className="argument"> 
-        <h3 className="resume-h3">{title}</h3>
-        <p className="resume-p">{date}</p>
-    </div>
+    <ArgumentDiv> 
+        <ResumeH3>{title}</ResumeH3>
+        <ResumeParagraph>{date}</ResumeParagraph>
+    </ArgumentDiv>
 )
 
 export default ExperienceEntry

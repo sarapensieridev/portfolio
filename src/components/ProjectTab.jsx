@@ -1,3 +1,4 @@
+import { pink, yellow } from "../constants";
 import { Carousel } from "../pages/Carousel/Carousel";
 import styled from "styled-components";
 
@@ -12,7 +13,7 @@ const ProjectTitle = styled.h2`
   justify-content: center;
   font-size: 35px;
   text-transform: uppercase;
-  color: #da4167;
+  color: ${pink};
   padding: 20px 0px;
 
   @media only screen and (max-width: 600px) {
@@ -26,6 +27,8 @@ const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* full width of parent */
+  position: relative;
 `;
 
 const ProjectParagraphDiv = styled.div`
@@ -35,7 +38,7 @@ const ProjectParagraphDiv = styled.div`
   align-items: center;
   padding: 40px 30px;
   margin: 0px 80px;
-  border-bottom: 4px solid #f4d35e;
+  border-bottom: 4px solid ${yellow};
 
   @media only screen and (max-width: 600px) {
     margin: 0px 10px;
@@ -59,7 +62,7 @@ const VisitSite = styled.p`
 
 const WebLink = styled.a`
   text-decoration: none;
-  color: #da4167;
+  color: ${pink};
   cursor: pointer;
   font-weight: bold;
 `;
